@@ -27,6 +27,7 @@
 	} else {
 		this.error = msg;
 	}
+	throw msg;
   }
 
   var nop = function(){};
