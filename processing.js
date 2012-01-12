@@ -1,3 +1,18 @@
+/***
+	
+	processing 1.3.6. REVISION 01
+	based on:
+
+    P R O C E S S I N G . J S - 1.3.6
+    a port of the Processing visualization language
+
+    Processing.js is licensed under the MIT License, see LICENSE.
+    For a list of copyright holders, please refer to AUTHORS.
+
+    http://processingjs.org
+
+***/
+
 
 (function(window, document, Math, undef) {
 
@@ -1948,8 +1963,8 @@
     p.frameCount      = 0;
 
     // The height/width of the canvas
-    p.width           = 100;
-    p.height          = 100;
+    p.width           = document.width;		// assuming fullscreen output
+    p.height          = document.height;	// assuming fullscreen output
 
     // "Private" variables used to maintain state
     var curContext,
