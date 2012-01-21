@@ -9211,8 +9211,9 @@
           arr.push(val[i].toString() + "");
         }
         return arr;
-      }
-      return (val.toString() + "");
+      } else {
+      	return (val.toString() + "");
+	  }
     };
     /**
      * Remove whitespace characters from the beginning and ending
