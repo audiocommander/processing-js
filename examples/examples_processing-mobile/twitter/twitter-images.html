@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Processing.js LiveTwitter Demo</title>
+  <script src="../../processing.js" type="text/javascript"></script>
+  <script src="processing-twitter.js" type="text/javascript"></script>
+</head>
+<body>
+  <script id="sketch" type="application/processing">
+    // Dynamic list of Tweet objects
+    HashMap uniqueTweets;
+
+    // A class representing a Tweet.  Tweet objects are created in JS
+    // and automatically placed in the tweets ArrayList (created in JS)
+    class Tweet {
+      public String id;
+      public String profileName;
+      public String profileImageUrl;
+      public PImage profileImage; // needs to be loaded manually
+      public String text;
+      public Date time;
+      public int randomPosX; // needs to be set -- randomPosX = random(0, width);
+      public int randomPosY; // needs to be set -- randomPosY = random(0, height);
+    }
+
+    void setup() {
+      size(1024, 1024);
+
+      uniqueTweets = new HashMap();
+      frameRate(1);
+
+      // Start a live feed loading, results will be available in a global
+      // ArrayList called tweets.
+      loadTweets('bacon');
+
+      // You can also pass geolocation data to limit tweets to a geographic area
+      // loadTweets('class', '43.7496,-79.4886,1km'); // York University
+    }
+
+    void draw() {
+      background(121);
+
+      Tweet tweet;
+
+      // Store unique tweets that have come in
+      for (int i = 0; i < tweets.size(); i++) {
+        tweet = (tweet)tweets.get(i);
+        addTweet(tweet);
+      }
+      tweets.clear();
+
+      // Loop through unique tweets we've stored
+      Iterator it = uniqueTweets.entrySet().iterator();
+      object elem;
+      int w, r;
+      while (it.hasNext()) {
+        elem = it.next();
+        tweet = (Tweet)elem.getValue();
+
+        // Draw the profile image
+        image(tweet.profileImage, tweet.randomPosX, tweet.randomPosY);
+
+        // Print the tweet to the Processing debug console
+        println(tweet.text);
+      }
+    }
+
+    // Store unique tweets (keyed on tweet.id), loading image data
+    void addTweet(Tweet tweet) {
+      if (!uniqueTweets.containsKey(tweet.id)) {
+        // Load a PImage of the profile pic
+        tweet.profileImage = requestImage(tweet.profileImageUrl);
+
+        // Draw profile images to the same place each frame
+        tweet.randomPosX = random(0, width);
+        tweet.randomPosY = random(0, height);
+
+        // Store the tweet in our list of unique tweets
+        uniqueTweets.put(tweet.id, tweet);
+      }
+    }
+  </script>
+  <canvas id="tweets"></canvas>
+</body>
+</html>

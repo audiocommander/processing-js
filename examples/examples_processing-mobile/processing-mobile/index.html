@@ -1,0 +1,56 @@
+<html>
+<head>
+  <title>Custom Device Motion Events in Processing.js</title>
+  <script src="../../processing.js"></script>
+
+  <!-- Custom JavaScript library extending Processing.js with Device Motion information. -->
+  <script src="../../processing-mobile.js"></script>
+</head>
+<body>
+  <h2>Device Motion Events in Processing.js for X and Y</h2>
+
+  <p>New built-in types are added to Processing: motionX, motionY, motionZ.  These are floats indicating the position of the device along the x, y, and z axis.  Each has a value bewtween -1 and 1.  Devices that do not support DeviceMotion events will have motionX == motionY == motionZ == 0 by default.</p>
+
+  <script type="text/processing" data-processing-target="sketch">
+    int x, y;
+    float lastTheta = 0;
+    float easing = 0.1;
+
+    void setup() {
+      size(500, 500);
+    }
+
+    void locationChanged() {
+      println(coords.longitude + ", " + coords.latitude);
+    }
+
+    void draw() {
+      background(51);
+
+      // Remap axis value to something within the sketch bounds
+      x = map(acceleration.x, -1.0, 1.0, 0, width);
+      y = map(acceleration.y, -1.0, 1.0, 0, height);
+
+      ellipse(x, y, 10, 10);
+
+      // Only show the compass if the device supports one
+      if (orientation.compassHeading >= 0 && orientation.compassAccuracy >= 0) {
+        // Ease the previous heading to the current heading
+        float theta = orientation.compassHeading;
+        float dtheta = theta - lastTheta;
+        if (abs(dtheta) < 180) {
+          lastTheta += dtheta * easing;
+        } else {
+          lastTheta = theta;
+        }
+
+        // Convert degree heading to an x/y co-ordinate;
+        int compassX = 100 * sin(radians(lastTheta));
+        int compassY = 100 * cos(radians(lastTheta));
+        ellipse(width/2 - compassX, height/2 - compassY, 20, 20);
+      }
+    }
+  </script>
+  <canvas id="sketch"></canvas>
+</body>
+</html>
