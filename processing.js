@@ -7985,7 +7985,7 @@
         doStroke = oldState.doStroke;
         currentStrokeColor = oldState.currentStrokeColor;
         curTint = oldState.curTint;
-        curRectMode = oldState.curRectmode;
+        curRectMode = oldState.curRectMode;
         curColorMode = oldState.curColorMode;
         colorModeX = oldState.colorModeX;
         colorModeZ = oldState.colorModeZ;
@@ -17581,11 +17581,13 @@
 
           // Run void setup()
           if (processing.setup) {
-            processing.setup();
-            // if any transforms were performed in setup reset to identity matrix
-            // so draw loop is unpolluted
-            processing.resetMatrix();
-            curSketch.onSetup();
+						setTimeout( function() { // Dirty Hack: In UIWebView this doesn't work, so add a really short delay
+            	processing.setup();
+            	// if any transforms were performed in setup reset to identity matrix
+            	// so draw loop is unpolluted
+            	processing.resetMatrix();
+            	curSketch.onSetup();
+						}, retryInterval);
           }
 
           // some pixels can be cached, flushing
@@ -19598,7 +19600,7 @@
   Processing.Sketch = function(attachFunction) {
     this.attachFunction = attachFunction; // can be optional
     this.options = {
-      pauseOnBlur: false,
+      pauseOnBlur: true,
       globalKeyEvents: false
     };
 
