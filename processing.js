@@ -17581,11 +17581,13 @@
 
           // Run void setup()
           if (processing.setup) {
+						setTimeout( function() { // Dirty Hack: In UIWebView this doesn't work, so add a really short delay
             	processing.setup();
             	// if any transforms were performed in setup reset to identity matrix
             	// so draw loop is unpolluted
             	processing.resetMatrix();
             	curSketch.onSetup();
+						}, retryInterval);
           }
 
           // some pixels can be cached, flushing
