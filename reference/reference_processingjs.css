@@ -1,0 +1,162 @@
+/* @override
+	http://www.audiocommander.de/procoding/resources/reference_processingjs.css */
+
+
+
+body {
+	background-color: white;
+	padding: 0;
+	margin: 0;
+	top: 0;
+	left: 0;
+	padding-right: 1em;
+	-webkit-hyphens: auto;
+}
+
+/* @group Font Properties */
+
+body,
+table,
+th, td, tr {
+	font: 14px/19px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+pre,
+tt,
+kbd {
+	font: 12px/15px Menlo, "AppleColorEmoji", "Courier New", Courir, monospace;
+	word-wrap: break-word;
+	-webkit-hyphens: none;
+}
+
+table {
+	text-align: left;
+}
+
+th {
+	text-align: right;
+	vertical-align: text-top;
+}
+
+tr th {
+	font-size: 80%;
+	-webkit-text-size-adjust: auto;
+}
+
+/* @end */
+
+/* @group Table Positioning */
+
+td table * {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	padding-left: 0 !important;
+}
+
+/* @end */
+
+/* @group Table Flow & Dimensions */
+
+* {
+	word-wrap: break-word;
+}
+
+th:last-child {
+	height: 1000px;
+	background-color: green !important;
+}
+table {
+	width: 100%;
+}
+th {
+	width: 20%;
+}
+td {
+	width: 80%;
+}
+table>* {
+	table-layout:fixed;
+	word-wrap: break-word;
+	width: 100%;
+	display: inline-table;
+}
+
+/* @end */
+
+
+/* @group Table Margins & Paddings */
+
+th, td {
+	padding-top: 1em;
+}
+td {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 1.5em;
+}
+th {
+	font-weight: bold;
+	background-color: #b6b3c5;
+	-webkit-box-shadow: 3px 1px 5px #444;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+td table * {
+	background-color: white !important;
+	-webkit-box-shadow: none;
+	font-weight: normal;
+	text-align: left;
+}
+
+/* @end */
+
+/* @group Images */
+img {
+	border: none;
+	padding: 6px;
+}
+
+/* @end */
+
+/* @group pjs overrides */
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	margin: 0;
+	padding: 0;
+}
+
+
+.tagline {
+	font-size: 85%;
+}
+
+.navbar,
+.sidebar {
+	display: none !important;
+}
+
+.page {
+	padding: 0 !important;
+}
+
+.header {
+	
+}
+.container {
+	margin: 0 !important;
+	box-shadow: 0px 0px 0px #FFF !important;
+	width: 100% !important;
+}
+.page,
+div.page.row
+.span11 {
+	width: 100% !important;
+}
+
+/* @end */
+

@@ -1,0 +1,102 @@
+
+<table cellpadding="0" cellspacing="0" border="0" class="ref-item">
+
+	<tr class="name-row">
+
+		<th scope="row">Name</th>
+
+		<td><h3>Touch</h3></td>
+
+
+
+	</tr>
+
+
+
+	<tr class="">
+
+		<th scope="row">Examples</th>
+
+		<td><div class="example"><pre>
+		
+void touchMove(TouchEvent t) {
+
+  if(t.touches.length &gt; 0) {
+
+    Touch aTouch = t.touches[0];
+
+    println("Touch ID " + aTouch.identifier + " moved to " + aTouch.offsetX + "," + aTouch.offsetY);
+
+  }
+  
+}
+
+		</pre></div></td>
+
+	</tr>
+
+
+
+	<tr class="">
+
+		<th scope="row">Description</th>
+
+
+		<td>The <b>Touch</b> object contains various information about a touch, such as a universal identifier and various positions related to the coordinate system.<br/>
+		&nbsp;<br/>
+		This is a preliminary document. For further informations see <b><a href="http://www.w3.org/TR/touch-events/">w3.org/TR/touch-events</a></b>.<br/>
+		&nbsp;<br/>
+		<strong>Note that this object is only available in Processing-mobile.js and not compatible with Processing.</td>
+
+	</tr>
+
+
+
+	<!--tr class="">
+
+		<th scope="row">Syntax</th>
+
+		<td>long identifier</td>
+		<td>EventTarget target</td>
+		 <td>long screenX</td>
+		 <td>long screenY</td>
+		 <td>long clientX</td>
+		 <td>long clientY</td>
+		 <td>long pageX</td>
+		 <td>long pageY</td>
+
+	</tr-->
+
+
+
+
+	<tr class="">
+
+		<th scope="row">Usage</th>
+
+		<td>Web &amp; Application</td>
+
+	</tr>
+
+
+
+	<tr class="">
+
+		<th scope="row">Related</th>
+
+		<td><a href="TouchList">TouchList</a><br />
+	
+	<a href="TouchEvent">TouchEvent</a><br />
+			
+	<a href="touchMove_">touchMove()</a><br />
+
+    <a href="touchEnd_">touchEnd()</a><br />
+
+    <a href="touchCancel_">touchCancel()</a><br /></td>
+
+	</tr>
+
+</table>
+
+
+

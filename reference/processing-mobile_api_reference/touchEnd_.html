@@ -1,0 +1,99 @@
+
+<table cellpadding="0" cellspacing="0" border="0" class="ref-item">
+
+	<tr class="name-row">
+
+		<th scope="row">Name</th>
+
+		<td><h3>touchEnd()</h3></td>
+
+
+
+	</tr>
+
+
+
+	<tr class="">
+
+		<th scope="row">Examples</th>
+
+		<td><div class="example"><pre>void touchEnd(TouchEvent t) {
+
+  println("touchEnd:" + t.changedTouches.length);
+  
+  int i;
+
+  for (i=0; i&lt;t.changedTouches.length; i++) {
+	
+    long id = t.touches[i].identifier;
+
+  }
+
+}</pre></div></td>
+
+	</tr>
+
+
+
+	<tr class="">
+
+		<th scope="row">Description</th>
+
+
+		<td>The <b>touchEnd()</b> function is called every time a known touch event has left the screen. Note that at this point the touch isn't available in the touches TouchList, as it is now gone. You will find all touches that ended in the changedTouches TouchList<br/>
+		&nbsp;<br/>
+			This is a preliminary document. For further informations see <b><a href="http://www.w3.org/TR/touch-events/">w3.org/TR/touch-events</a></b>.<br/>
+			&nbsp;<br/>
+			<strong>Note that this object is only available in Processing-mobile.js and not compatible with Processing.</td>
+
+	</tr>
+
+
+
+	<tr class="">
+
+		<th scope="row">Syntax</th>
+
+		<td><pre>void touchEnd(TouchEvent t) {
+
+  <kbd>statements</kbd>
+
+
+}</pre></td>
+
+	</tr>
+
+
+
+	<tr class="">
+
+		<th scope="row">Usage</th>
+
+		<td>Web &amp; Application</td>
+
+	</tr>
+
+
+
+		<tr class="">
+
+			<th scope="row">Related</th>
+
+			<td><a href="Touch">Touch</a><br />
+
+		<a href="TouchList">TouchList</a><br />
+
+		<a href="TouchEvent">TouchEvent</a><br />
+				
+		<a href="touchStart_">touchStart()</a><br />
+
+		<a href="touchMove_">touchMove()</a><br />
+
+	    <a href="touchCancel_">touchCancel()</a><br /></td>
+
+		</tr>
+
+	</table>
+
+
+

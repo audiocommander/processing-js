@@ -1,0 +1,109 @@
+
+<table cellpadding="0" cellspacing="0" border="0" class="ref-item">
+
+	<tr class="name-row">
+
+		<th scope="row">Name</th>
+
+		<td><h3>Orientation</h3></td>
+
+
+
+	</tr>
+
+
+
+	<tr class="">
+
+		<th scope="row">Examples</th>
+
+		<td><div class="example"><pre>
+		
+void draw() {
+
+  fill(255);
+  // map acceleration values from the expected acceleration.alpha range (0 to 360°) to the full width (0 to width)
+  int x = map(orientation.alpha, 0, 360, 0, width);
+  rect(x, 100, 100, 100);
+  
+}
+
+		</pre></div></td>
+
+	</tr>
+
+
+
+	<tr class="">
+
+		<th scope="row">Description</th>
+
+
+		<td>The <b>Orientation</b> object contains the tilt information for the device in degrees along the x, y and z axes.<br/>In contrast to the <a href="acceleration">acceleration</a> object, it is only available on newer devices with a gyroscope/compass sensor. Additionaly the Orientation object also contains compass informations like heading and accuracy. If no such sensor is available in the device, the object returns either 0 or -1 values.<br/>
+		&nbsp;<br/>
+		Note: While the Orientation object contains accurate realtime tilting data, a simple device orientation can also be easily determined by the JavaScript window.orientation value, which returns four int values: 0 (up), 90 (left), -90 (right) or 180 (down).<br/>
+		&nbsp;<br/>
+		For further informations see <b><a href="http://www.html5rocks.com/en/tutorials/device/orientation/">html5rocks.com/en/tutorials/device/orientation/</a></b> and <b><a href="http://dev.w3.org/geo/api/spec-source.html">dev.w3.org/geo/api/spec-source.html</a></b>.<br/>
+		&nbsp;<br/>
+		<strong>Note that this object is only available in Processing-mobile.js and not compatible with Processing. There also may be incompatibilites if this sketch is run in older or non-webkit browsers.</td>
+
+	</tr>
+
+
+
+	<tr class="">
+	
+			<th scope="row">Fields</th>
+	
+			<td>(float) alpha: the direction the device is facing according to the compass</td>
+			<td>(float) beta: the angle in degrees the device is tilted front-to-back</td>
+			<td>(float) gamma: the angle in degrees the device is tilted left-to-right</td>
+			<td>(float) compassHeading: the iOS 5 compass heading in degrees (or -1)</td>
+			<td>(float) compassAccuracy: the iOS 5 compass accuracy (or -1)</td>
+	
+	</tr>
+	
+		
+	<tr class="">
+
+		<th scope="row">Syntax</th>
+
+		<td>orientation.alpha</td>
+		<td>orientation.beta</td>
+		<td>orientation.gamma</td>
+		<td>orientation.compassHeading</td>
+		<td>orientation.compassAccuracy</td>
+
+	</tr>
+
+
+
+
+	<tr class="">
+
+		<th scope="row">Usage</th>
+
+		<td>Web</td>
+
+	</tr>
+
+
+
+	<tr class="">
+
+		<th scope="row">Related</th>
+
+		<td><a href="acceleration">acceleration</a><br />
+	
+		<!--a href="coords">coords</a><br /-->
+			
+		<a href="locationChanged_">locationChanged()</a><br />
+
+	    <!--a href="orientation">orientation</a><br /-->
+
+	</tr>
+
+</table>
+
+
+

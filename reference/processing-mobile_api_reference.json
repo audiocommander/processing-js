@@ -1,0 +1,101 @@
+{
+	"acceleration": {
+	    "API": "processing-mobile_api_reference",
+	    "Category": "Device Motion",
+	    "Name": "acceleration",
+	    "URL": "acceleration",
+	    "Syntax": "acceleration",
+	    "Online": 0,
+	    "Hidden": 0
+	},
+	"coords": {
+	    "API": "processing-mobile_api_reference",
+	    "Category": "Device Motion",
+	    "Name": "coords",
+	    "URL": "coords",
+	    "Syntax": "coords",
+	    "Online": 0,
+	    "Hidden": 1
+	},
+	"locationChanged()": {
+        "API": "processing-mobile_api_reference",
+        "Category": "Device Motion",
+        "Name": "locationChanged()",
+        "URL": "locationChanged_",
+        "Syntax": "void locationChanged() {  }",
+        "Online": 0,
+        "Hidden": 1
+    },
+	"orientation": {
+	    "API": "processing-mobile_api_reference",
+	    "Category": "Device Motion",
+	    "Name": "orientation",
+	    "URL": "orientation",
+	    "Syntax": "orientation",
+	    "Online": 0,
+	    "Hidden": 0
+	},
+    "Touch": {
+        "API": "processing-mobile_api_reference",
+        "Category": "Input: Touch",
+        "Name": "Touch",
+        "URL": "Touch",
+        "Syntax": "Touch",
+        "Online": 0,
+        "Hidden": 0
+    },
+    "touchCancel()": {
+        "API": "processing-mobile_api_reference",
+        "Category": "Input: Touch",
+        "Name": "touchCancel()",
+        "URL": "touchCancel_",
+        "Syntax": "void touchCancel() {  }",
+        "Online": 0,
+        "Hidden": 0
+    },
+    "touchEnd()": {
+        "API": "processing-mobile_api_reference",
+        "Category": "Input: Touch",
+        "Name": "touchEnd()",
+        "URL": "touchEnd_",
+        "Syntax": "void touchEnd() {  }",
+        "Online": 0,
+        "Hidden": 0
+    },
+    "TouchEvent": {
+        "API": "processing-mobile_api_reference",
+        "Category": "Input: Touch",
+        "Name": "TouchEvent",
+        "URL": "TouchEvent",
+        "Syntax": "TouchEvent",
+        "Online": 0,
+        "Hidden": 0
+    },
+    "TouchList": {
+        "API": "processing-mobile_api_reference",
+        "Category": "Input: Touch",
+        "Name": "TouchList",
+        "URL": "TouchList",
+        "Syntax": "TouchList",
+        "Online": 0,
+        "Hidden": 0
+    },
+    "touchMove()": {
+        "API": "processing-mobile_api_reference",
+        "Category": "Input: Touch",
+        "Name": "touchMove()",
+        "URL": "touchMove_",
+        "Syntax": "void touchMove() {  }",
+        "Online": 0,
+        "Hidden": 0
+    },
+    "touchStart()": {
+        "API": "processing-mobile_api_reference",
+        "Category": "Input: Touch",
+        "Name": "touchStart()",
+        "URL": "touchStart_",
+        "Syntax": "void touchStart() {  }",
+        "Online": 0,
+        "Hidden": 0
+    }
+}

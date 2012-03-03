@@ -1,5 +1,5 @@
 // Motion Event Demo
-// for PR0C3551N6 by Michael Markert
+// for PR0C0D1N6 by Michael Markert
 //
 // alpha, beta & gamma are only available for devices with gyroscope (iPad >=2, iPhone >=4)
 
@@ -169,7 +169,8 @@ void info() {
       " c:"+nfp(cmin,3)+"…"+nfp(cmax,3)+
       " x:"+nfp(axmin,3)+"…"+nfp(axmax,3)+
       " o:"+window.orientation+
-      " Gyro:"+orientation.compassAccuracy
+	  " Compass:"+orientation.compassHeading+
+      " ~:"+orientation.compassAccuracy
       );
 }
 

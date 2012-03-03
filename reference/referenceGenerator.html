@@ -1,0 +1,138 @@
+<html>
+<head>
+	<title>JSON Reference Generator</title>
+	<meta charset="UTF8" />
+	
+	<script type="text/javascript">
+	
+		var form;
+		var generated;
+		
+		window.onload = function() {
+			// get form values
+			form = document.forms[0];
+			console.log(form.name.value);
+			
+			generated = document.querySelector("#generated");
+		
+			
+			form.title.onchange = function(e) {
+				console.log(form.title.value);
+				
+				var value = form.title.value;
+				form.name.value = value;
+				if(form.lockURL.checked === false) {
+					if(value.indexOf("()") > 1) {
+						value = value.substr(0, value.length-2);
+						form.URL.value = value + "_";
+					} else {
+						form.URL.value = value;
+					}
+				}
+				// if title contains "." only take the last part of it as syntax
+				// eg: "Point.x" => "x"
+				var hasdot = value.indexOf(".");
+				if(hasdot > 1) {
+					value = value.substr(hasdot+1, value.length);
+				}
+				form.syntax.value = value;
+			}
+		
+			form.onsubmit = function(e) {
+				//console.log("submit " + form);
+				
+				var result = document.createElement("p");
+				result.appendChild( document.createTextNode(
+					'"'
+						+form.title.value+
+					'": { '+
+					'"API":"'
+						+form.api.value+
+					'", "Category":"'
+						+form.category.value+
+					'", "Name":"'
+						+form.name.value+
+					'", "URL":"'
+						+form.URL.value+
+					'", "Syntax":"'
+						+form.syntax.value+
+					'", "Online":'
+						+((form.online.value=="on")?"1":"0")+
+					'", "Hidden":'
+						+((form.hidden.value=="on")?"1":"0")+
+					'},'
+				));
+				
+				generated.appendChild(result);
+				
+				return false;
+			}
+			
+			form.onreset = function(e) {
+				// remove last entry
+				
+				var result = document.getElementsByTagName("p");
+				var length = result.length;
+				if(length > 0) {
+					generated.removeChild(result[length-1]);
+				}
+				
+				return false;
+			}
+			
+		}
+		
+	</script>
+	
+	<style type="text/css">
+		body {
+			font-family: "American Typewriter", slab-serif;
+			font-size: 1em;
+		}
+		input {
+			margin: 0.5em;
+			width: 40%;
+		}
+		input[type*="check"] {
+			width: 10%;
+		}
+		input[type*="submit"],
+		input[type*="reset"] {
+			width:  19%;
+		}
+		label {
+			display: inline-block;
+			width: 5em;
+			text-align: right;
+			font-size: 90%;
+			color: grey;
+		}
+	</style>
+</head>
+<body>
+
+<h2>JSON Reference Generator</h2>
+<div id="reference">
+	<form id="form" action="">
+
+		<label>API</label><input type="text" name="api" /><br/>
+		<label>Category</label><input type="text" name="category" /><br/>
+		<label>title</label><input type="text" name="title" /><br/>
+		<label>name</label><input type="text" name="name" /><br/>
+		<label>URL</label><input type="text" name="URL" />
+		<label>lock</label><input type="checkbox" name="lockURL" value="false" /><br/>
+		<label>Syntax</label><input type="text" name="syntax" /><br/>
+		<label>Online</label><input type="checkbox" name="online" /><br/>
+		<label>Hidden</label><input type="checkbox" name="hidden" /><br/>
+		<br/>
+		<label></label><input type="submit" name="submit" value="Add" />
+		<input type="reset" name="reset" value="Undo" />
+
+	</form>
+</div>
+
+<div id="generated">
+
+</div>
+</body>	
+</html>

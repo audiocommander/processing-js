@@ -3,6 +3,9 @@ Processing.js - @VERSION@
 =========================
 a port of the Processing visualization language
 
+This is a fork of the official processingjs project for PR0C0D1N6:
+http://procoding.audiocommander.de
+
 About Us
 --------
 * License:           MIT (see included LICENSE file for full license)

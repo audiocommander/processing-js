@@ -1,0 +1,2954 @@
+{
+    "! (logical NOT)": {
+        "API": "processing_api_reference",
+        "Category": "Logical Operators",
+        "Name": "! (logical NOT)",
+        "URL": "logical NOT",
+        "Syntax": "!",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "!= (inequality)": {
+        "API": "processing_api_reference",
+        "Category": "Relational Operators",
+        "Name": "!= (inequality)",
+        "URL": "inequality",
+        "Syntax": "!=",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "% (modulo)": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "% (modulo)",
+        "URL": "modulo",
+        "Syntax": "%",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "& (bitwise AND)": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "& (bitwise AND)",
+        "URL": "bitwise AND",
+        "Syntax": "&",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "&& (logical AND)": {
+        "API": "processing_api_reference",
+        "Category": "Logical Operators",
+        "Name": "&& (logical AND)",
+        "URL": "logical AND",
+        "Syntax": "&&",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "() (parentheses)": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "() (parentheses)",
+        "URL": "parentheses",
+        "Syntax": "( )",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "* (multiply)": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "* (multiply)",
+        "URL": "multiply",
+        "Syntax": "*",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "*= (multiply assign)": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "*= (multiply assign)",
+        "URL": "multiply assign",
+        "Syntax": "*=",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "+ (addition)": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "+ (addition)",
+        "URL": "addition",
+        "Syntax": "+",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "++ (increment)": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "++ (increment)",
+        "URL": "increment",
+        "Syntax": "++",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "+= (add assign)": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "+= (add assign)",
+        "URL": "add assign",
+        "Syntax": "+=",
+        "Online": 1,
+        "Hidden": 0
+    },
+    ", (comma)": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": ", (comma)",
+        "URL": "comma",
+        "Syntax": ",",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "- (minus)": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "- (minus)",
+        "URL": "minus",
+        "Syntax": "-",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "-- (decrement)": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "-- (decrement)",
+        "URL": "decrement",
+        "Syntax": "--",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "-= (subtract assign)": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "-= (subtract assign)",
+        "URL": "subtract assign",
+        "Syntax": "-=",
+        "Online": 1,
+        "Hidden": 0
+    },
+    ". (dot)": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": ". (dot)",
+        "URL": "dot",
+        "Syntax": ".",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "/ (divide)": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "/ (divide)",
+        "URL": "divide",
+        "Syntax": "/",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "/* */ (multiline comment)": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "/* */ (multiline comment)",
+        "URL": "multiline comment",
+        "Syntax": "/*   */",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "/** */ (doc comment)": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "/** */ (doc comment)",
+        "URL": "doc comment",
+        "Syntax": "/**   */",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "// (comment)": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "// (comment)",
+        "URL": "comment",
+        "Syntax": "// ",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "/= (divide assign)": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "/= (divide assign)",
+        "URL": "divide assign",
+        "Syntax": "/=",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "; (semicolon)": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "; (semicolon)",
+        "URL": "semi colon",
+        "Syntax": ";",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "< (less than)": {
+        "API": "processing_api_reference",
+        "Category": "Relational Operators",
+        "Name": "< (less than)",
+        "URL": "less than",
+        "Syntax": "<",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "<< (left shift)": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "<< (left shift)",
+        "URL": "left shift",
+        "Syntax": "<<",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "<= (less than or equal to)": {
+        "API": "processing_api_reference",
+        "Category": "Relational Operators",
+        "Name": "<= (less than or equal to)",
+        "URL": "less than or equal to",
+        "Syntax": "<=",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "= (assign)": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "= (assign)",
+        "URL": "assign",
+        "Syntax": "=",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "== (equality)": {
+        "API": "processing_api_reference",
+        "Category": "Relational Operators",
+        "Name": "== (equality)",
+        "URL": "equality",
+        "Syntax": "==",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "> (greater than)": {
+        "API": "processing_api_reference",
+        "Category": "Relational Operators",
+        "Name": "> (greater than)",
+        "URL": "greater than",
+        "Syntax": ">",
+        "Online": 1,
+        "Hidden": 0
+    },
+    ">= (greater than or equal to)": {
+        "API": "processing_api_reference",
+        "Category": "Relational Operators",
+        "Name": ">= (greater than or equal to)",
+        "URL": "greater than or equal to",
+        "Syntax": ">=",
+        "Online": 1,
+        "Hidden": 0
+    },
+    ">> (right shift)": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": ">> (right shift)",
+        "URL": "right shift",
+        "Syntax": ">>",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "?: (conditional)": {
+        "API": "processing_api_reference",
+        "Category": "Conditionals",
+        "Name": "?: (conditional)",
+        "URL": "conditional",
+        "Syntax": "(expression) ? (resultIfTrue) : (resultIfFalse)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "@pjs directives": {
+        "API": "processing_api_reference",
+        "Category": "@pjs directives",
+        "Name": "/* @pjs */ directives",
+        "URL": "pjs directive",
+        "Syntax": "/* @pjs preload=\"image.jpg\" */",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "abs()": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "abs()",
+        "URL": "abs_",
+        "Syntax": "abs(int or float)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "acos()": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "acos()",
+        "URL": "acos_",
+        "Syntax": "acos(float)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "alpha()": {
+        "API": "processing_api_reference",
+        "Category": "Color",
+        "Name": "alpha()",
+        "URL": "alpha_",
+        "Syntax": "alpha(color)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "ambient()": {
+        "API": "processing_api_reference",
+        "Category": "3D Material",
+        "Name": "ambient()",
+        "URL": "ambient_",
+        "Syntax": "ambient(v1, v2, v3)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "ambientLight()": {
+        "API": "processing_api_reference",
+        "Category": "3D Lights",
+        "Name": "ambientLight()",
+        "URL": "ambientLight_",
+        "Syntax": "ambientLight(v1, v2, v3)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "append()": {
+        "API": "processing_api_reference",
+        "Category": "Array Functions",
+        "Name": "append()",
+        "URL": "append_",
+        "Syntax": "append(array, element)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "applyMatrix()": {
+        "API": "processing_api_reference",
+        "Category": "Transform",
+        "Name": "applyMatrix()",
+        "URL": "applyMatrix_",
+        "Syntax": "applyMatrix(n00, n01, n02, n03, n04, n05, n06, n07, n08, n09, n10, n11, n12, n13, n14, n15)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "arc()": {
+        "API": "processing_api_reference",
+        "Category": "2D Primitives",
+        "Name": "arc()",
+        "URL": "arc_",
+        "Syntax": "arc(x, y, width, height, start, stop)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "Array": {
+        "API": "processing_api_reference",
+        "Category": "Data Composite",
+        "Name": "Array",
+        "URL": "Array",
+        "Syntax": "Array",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "arrayCopy()": {
+        "API": "processing_api_reference",
+        "Category": "Array Functions",
+        "Name": "arrayCopy()",
+        "URL": "arrayCopy_",
+        "Syntax": "arrayCopy(src, dest)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "ArrayList": {
+        "API": "processing_api_reference",
+        "Category": "Data Composite",
+        "Name": "ArrayList",
+        "URL": "ArrayList",
+        "Syntax": "ArrayList",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "asin()": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "asin()",
+        "URL": "asin_",
+        "Syntax": "asin(value)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "atan()": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "atan()",
+        "URL": "atan_",
+        "Syntax": "atan(value)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "atan2()": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "atan2()",
+        "URL": "atan2_",
+        "Syntax": "atan2(y, x)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "background()": {
+        "API": "processing_api_reference",
+        "Category": "Color",
+        "Name": "background()",
+        "URL": "background_",
+        "Syntax": "background(color)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "beginCamera()": {
+        "API": "processing_api_reference",
+        "Category": "3D Camera",
+        "Name": "beginCamera()",
+        "URL": "beginCamera_",
+        "Syntax": "beginCamera()",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "beginShape()": {
+        "API": "processing_api_reference",
+        "Category": "Shape",
+        "Name": "beginShape()",
+        "URL": "beginShape_",
+        "Syntax": "beginShape()",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "bezier()": {
+        "API": "processing_api_reference",
+        "Category": "2D Curves",
+        "Name": "bezier()",
+        "URL": "bezier_",
+        "Syntax": "bezier(x1, y1, cx1, cy1, cx2, cy2, x2, y2)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "bezierDetail()": {
+        "API": "processing_api_reference",
+        "Category": "2D Curves",
+        "Name": "bezierDetail()",
+        "URL": "bezierDetail_",
+        "Syntax": "bezierDetail(detail)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "bezierPoint()": {
+        "API": "processing_api_reference",
+        "Category": "2D Curves",
+        "Name": "bezierPoint()",
+        "URL": "bezierPoint_",
+        "Syntax": "bezierPoint(a, b, c, d, t)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "bezierTangent()": {
+        "API": "processing_api_reference",
+        "Category": "2D Curves",
+        "Name": "bezierTangent()",
+        "URL": "bezierTangent_",
+        "Syntax": "bezierTangent(a, b, c, d, t)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "bezierVertex()": {
+        "API": "processing_api_reference",
+        "Category": "Shape",
+        "Name": "bezierVertex()",
+        "URL": "bezierVertex_",
+        "Syntax": "bezierVertex(cx1, cy1, cx2, cy2, x, y)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "binary()": {
+        "API": "processing_api_reference",
+        "Category": "Data Conversion",
+        "Name": "binary()",
+        "URL": "binary_",
+        "Syntax": "binary(value)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "blend()": {
+        "API": "processing_api_reference",
+        "Category": "Image",
+        "Name": "blend()",
+        "URL": "blend_",
+        "Syntax": "blend(srcImg, x, y, width, height, dx, dy, dwidth, dheight, MODE)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "blendColor()": {
+        "API": "processing_api_reference",
+        "Category": "Color",
+        "Name": "blendColor()",
+        "URL": "blendColor_",
+        "Syntax": "blendColor(c1, c2, MODE)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "blue()": {
+        "API": "processing_api_reference",
+        "Category": "Color",
+        "Name": "blue()",
+        "URL": "blue_",
+        "Syntax": "blue(color)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "boolean": {
+        "API": "processing_api_reference",
+        "Category": "Data Primitives",
+        "Name": "boolean",
+        "URL": "boolean",
+        "Syntax": "boolean",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "boolean()": {
+        "API": "processing_api_reference",
+        "Category": "Data Conversion",
+        "Name": "boolean()",
+        "URL": "boolean_",
+        "Syntax": "boolean(value)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "box()": {
+        "API": "processing_api_reference",
+        "Category": "3D Primitives",
+        "Name": "box()",
+        "URL": "box_",
+        "Syntax": "box(width, height, depth)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "break": {
+        "API": "processing_api_reference",
+        "Category": "Conditionals",
+        "Name": "break",
+        "URL": "break",
+        "Syntax": "break",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "brightness()": {
+        "API": "processing_api_reference",
+        "Category": "Color",
+        "Name": "brightness()",
+        "URL": "brightness_",
+        "Syntax": "brightness(color)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "byte": {
+        "API": "processing_api_reference",
+        "Category": "Data Primitives",
+        "Name": "byte",
+        "URL": "byte",
+        "Syntax": "byte",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "byte()": {
+        "API": "processing_api_reference",
+        "Category": "Data Conversion",
+        "Name": "byte()",
+        "URL": "byte_",
+        "Syntax": "byte(value)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "camera()": {
+        "API": "processing_api_reference",
+        "Category": "3D Camera",
+        "Name": "camera()",
+        "URL": "camera_",
+        "Syntax": "camera(eyeX, eyeY, eyeZ, centerX, centerY, centerZ, upX, upY, upZ)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "case": {
+        "API": "processing_api_reference",
+        "Category": "Conditionals",
+        "Name": "case",
+        "URL": "case",
+        "Syntax": "case",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "ceil()": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "ceil()",
+        "URL": "ceil_",
+        "Syntax": "ceil(value)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "char": {
+        "API": "processing_api_reference",
+        "Category": "Data Primitives",
+        "Name": "char",
+        "URL": "char",
+        "Syntax": "char",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "char()": {
+        "API": "processing_api_reference",
+        "Category": "Data Conversion",
+        "Name": "char()",
+        "URL": "char_",
+        "Syntax": "char(value)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "class": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "class",
+        "URL": "class",
+        "Syntax": "class MyClass {  }",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "color": {
+        "API": "processing_api_reference",
+        "Category": "Data Primitives",
+        "Name": "color",
+        "URL": "color datatype",
+        "Syntax": "color",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "color()": {
+        "API": "processing_api_reference",
+        "Category": "Color",
+        "Name": "color()",
+        "URL": "color_",
+        "Syntax": "color(value)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "colorMode()": {
+        "API": "processing_api_reference",
+        "Category": "Color",
+        "Name": "colorMode()",
+        "URL": "colorMode_",
+        "Syntax": "colorMode(MODE)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "concat()": {
+        "API": "processing_api_reference",
+        "Category": "Array Functions",
+        "Name": "concat()",
+        "URL": "concat_",
+        "Syntax": "concat(array1, array2)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "constrain()": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "constrain()",
+        "URL": "constrain_",
+        "Syntax": "constrain(value, min, max)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "continue": {
+        "API": "processing_api_reference",
+        "Category": "Conditionals",
+        "Name": "continue",
+        "URL": "continue",
+        "Syntax": "continue",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "copy()": {
+        "API": "processing_api_reference",
+        "Category": "Image",
+        "Name": "copy()",
+        "URL": "copy_",
+        "Syntax": "copy(x, y, width, height, dx, dy, dwidth, dheight)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "cos()": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "cos()",
+        "URL": "cos_",
+        "Syntax": "cos(angle)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "createFont()": {
+        "API": "processing_api_reference",
+        "Category": "Typography",
+        "Name": "createFont()",
+        "URL": "createFont_",
+        "Syntax": "createFont(name, size)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "createGraphics()": {
+        "API": "processing_api_reference",
+        "Category": "Rendering",
+        "Name": "createGraphics()",
+        "URL": "createGraphics_",
+        "Syntax": "createGraphics(width, height, renderer)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "createImage()": {
+        "API": "processing_api_reference",
+        "Category": "Image",
+        "Name": "createImage()",
+        "URL": "createImage_",
+        "Syntax": "createImage(width, height, format)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "crisp": {
+        "API": "processing_api_reference",
+        "Category": "@pjs directives",
+        "Name": "crisp",
+        "URL": "crisp",
+        "Syntax": "/* @pjs crisp=\"true\"; */",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "cursor()": {
+        "API": "processing_api_reference",
+        "Category": "Environment",
+        "Name": "cursor()",
+        "URL": "cursor_",
+        "Syntax": "cursor(MODE)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "curve()": {
+        "API": "processing_api_reference",
+        "Category": "2D Curves",
+        "Name": "curve()",
+        "URL": "curve_",
+        "Syntax": "curve(x1, y1, x2, y2, x3, y3, x4, y4)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "curveDetail()": {
+        "API": "processing_api_reference",
+        "Category": "2D Curves",
+        "Name": "curveDetail()",
+        "URL": "curveDetail_",
+        "Syntax": "curveDetail(detail)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "curvePoint()": {
+        "API": "processing_api_reference",
+        "Category": "2D Curves",
+        "Name": "curvePoint()",
+        "URL": "curvePoint_",
+        "Syntax": "curvePoint(a, b, c, d, t)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "curveTangent()": {
+        "API": "processing_api_reference",
+        "Category": "2D Curves",
+        "Name": "curveTangent()",
+        "URL": "curveTangent_",
+        "Syntax": "curveTangent(a, b, c, d, t)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "curveTightness()": {
+        "API": "processing_api_reference",
+        "Category": "2D Curves",
+        "Name": "curveTightness()",
+        "URL": "curveTightness_",
+        "Syntax": "curveTightness(squishy)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "curveVertex()": {
+        "API": "processing_api_reference",
+        "Category": "Shape",
+        "Name": "curveVertex()",
+        "URL": "curveVertex_",
+        "Syntax": "curveVertex(x, y)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "day()": {
+        "API": "processing_api_reference",
+        "Category": "Time & Date",
+        "Name": "day()",
+        "URL": "day_",
+        "Syntax": "day()",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "default": {
+        "API": "processing_api_reference",
+        "Category": "Conditionals",
+        "Name": "default",
+        "URL": "default",
+        "Syntax": "default",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "degrees()": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "degrees()",
+        "URL": "degrees_",
+        "Syntax": "degrees(angle)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "directionalLight()": {
+        "API": "processing_api_reference",
+        "Category": "3D Lights",
+        "Name": "directionalLight()",
+        "URL": "directionalLight_",
+        "Syntax": "directionalLight(v1, v2, v3, nx, ny, nz)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "dist()": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "dist()",
+        "URL": "dist_",
+        "Syntax": "dist(x1, y1, x2, y2)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "double": {
+        "API": "processing_api_reference",
+        "Category": "Data Primitives",
+        "Name": "double",
+        "URL": "double",
+        "Syntax": "double",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "draw()": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "draw()",
+        "URL": "draw_",
+        "Syntax": "void draw() {  }",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "ellipse()": {
+        "API": "processing_api_reference",
+        "Category": "2D Primitives",
+        "Name": "ellipse()",
+        "URL": "ellipse_",
+        "Syntax": "ellipse(x, y, width, height)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "ellipseMode()": {
+        "API": "processing_api_reference",
+        "Category": "Attributes",
+        "Name": "ellipseMode()",
+        "URL": "ellipseMode_",
+        "Syntax": "ellipseMode(MODE)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "else()": {
+        "API": "processing_api_reference",
+        "Category": "Conditionals",
+        "Name": "else()",
+        "URL": "else_",
+        "Syntax": "} else {",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "emissive()": {
+        "API": "processing_api_reference",
+        "Category": "3D Material",
+        "Name": "emissive()",
+        "URL": "emissive_",
+        "Syntax": "emissive(color)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "endCamera()": {
+        "API": "processing_api_reference",
+        "Category": "3D Camera",
+        "Name": "endCamera()",
+        "URL": "endCamera_",
+        "Syntax": "endCamera()",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "endShape()": {
+        "API": "processing_api_reference",
+        "Category": "Shape",
+        "Name": "endShape()",
+        "URL": "endShape_",
+        "Syntax": "endShape()",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "exit()": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "exit()",
+        "URL": "exit_",
+        "Syntax": "exit()",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "exp()": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "exp()",
+        "URL": "exp_",
+        "Syntax": "exp(value)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "expand()": {
+        "API": "processing_api_reference",
+        "Category": "Array Functions",
+        "Name": "expand()",
+        "URL": "expand_",
+        "Syntax": "expand(array)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "extends": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "extends",
+        "URL": "extends",
+        "Syntax": "extends",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "false": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "false",
+        "URL": "false",
+        "Syntax": "false",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "fill()": {
+        "API": "processing_api_reference",
+        "Category": "Color",
+        "Name": "fill()",
+        "URL": "fill_",
+        "Syntax": "fill(color)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "filter()": {
+        "API": "processing_api_reference",
+        "Category": "Image",
+        "Name": "filter()",
+        "URL": "filter_",
+        "Syntax": "filter(MODE)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "final": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "final",
+        "URL": "final",
+        "Syntax": "final",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "float": {
+        "API": "processing_api_reference",
+        "Category": "Data Primitives",
+        "Name": "float",
+        "URL": "float",
+        "Syntax": "float",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "float()": {
+        "API": "processing_api_reference",
+        "Category": "Data Conversion",
+        "Name": "float()",
+        "URL": "float_",
+        "Syntax": "float(value)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "floor()": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "floor()",
+        "URL": "floor_",
+        "Syntax": "floor(value)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "focused": {
+        "API": "processing_api_reference",
+        "Category": "Environment",
+        "Name": "focused",
+        "URL": "focused",
+        "Syntax": "focused",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "font": {
+        "API": "processing_api_reference",
+        "Category": "@pjs directives",
+        "Name": "font",
+        "URL": "font",
+        "Syntax": "/* @pjs font=\"fontURL\"; */",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "for()": {
+        "API": "processing_api_reference",
+        "Category": "Iteration",
+        "Name": "for()",
+        "URL": "for_",
+        "Syntax": "for(init; test; update)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "frameCount": {
+        "API": "processing_api_reference",
+        "Category": "Environment",
+        "Name": "frameCount",
+        "URL": "frameCount",
+        "Syntax": "frameCount",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "frameRate": {
+        "API": "processing_api_reference",
+        "Category": "Environment",
+        "Name": "frameRate",
+        "URL": "frameRate",
+        "Syntax": "frameRate",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "frameRate()": {
+        "API": "processing_api_reference",
+        "Category": "Environment",
+        "Name": "frameRate()",
+        "URL": "frameRate_",
+        "Syntax": "frameRate(fps)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "frustum()": {
+        "API": "processing_api_reference",
+        "Category": "3D Camera",
+        "Name": "frustum()",
+        "URL": "frustum_",
+        "Syntax": "frustum(left, right, bottom, top, near, far)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "get()": {
+        "API": "processing_api_reference",
+        "Category": "Image",
+        "Name": "get()",
+        "URL": "get_",
+        "Syntax": "get(x, y)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "globalKeyEvents": {
+        "API": "processing_api_reference",
+        "Category": "@pjs directives",
+        "Name": "globalKeyEvents",
+        "URL": "globalKeyEvents",
+        "Syntax": "/* @pjs globalKeyEvents=\"true\"; */",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "green()": {
+        "API": "processing_api_reference",
+        "Category": "Color",
+        "Name": "green()",
+        "URL": "green_",
+        "Syntax": "green(color)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "HALF_PI (1.57079…)": {
+        "API": "processing_api_reference",
+        "Category": "Constants",
+        "Name": "HALF_PI (1.57079…)",
+        "URL": "HALF_PI",
+        "Syntax": "HALP_PI",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "HashMap": {
+        "API": "processing_api_reference",
+        "Category": "Data Composite",
+        "Name": "HashMap",
+        "URL": "HashMap",
+        "Syntax": "HashMap",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "height": {
+        "API": "processing_api_reference",
+        "Category": "Environment",
+        "Name": "height",
+        "URL": "height",
+        "Syntax": "height",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "hex()": {
+        "API": "processing_api_reference",
+        "Category": "Data Conversion",
+        "Name": "hex()",
+        "URL": "hex_",
+        "Syntax": "hex(value)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "hint()": {
+        "API": "processing_api_reference",
+        "Category": "Rendering",
+        "Name": "hint()",
+        "URL": "hint_",
+        "Syntax": "hint(item)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "hour()": {
+        "API": "processing_api_reference",
+        "Category": "Time & Date",
+        "Name": "hour()",
+        "URL": "hour_",
+        "Syntax": "hour()",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "hue()": {
+        "API": "processing_api_reference",
+        "Category": "Color",
+        "Name": "hue()",
+        "URL": "hue_",
+        "Syntax": "hue(color)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "if()": {
+        "API": "processing_api_reference",
+        "Category": "Conditionals",
+        "Name": "if()",
+        "URL": "if_",
+        "Syntax": "if(expression) {  }",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "image()": {
+        "API": "processing_api_reference",
+        "Category": "Image",
+        "Name": "image()",
+        "URL": "image_",
+        "Syntax": "image(img, x, y, width, height)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "imageMode()": {
+        "API": "processing_api_reference",
+        "Category": "Image",
+        "Name": "imageMode()",
+        "URL": "imageMode_",
+        "Syntax": "imageMode(MODE)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "implements": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "implements",
+        "URL": "implements",
+        "Syntax": "implements",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "import": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "import",
+        "URL": "import",
+        "Syntax": "import",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "int": {
+        "API": "processing_api_reference",
+        "Category": "Data Primitives",
+        "Name": "int",
+        "URL": "int",
+        "Syntax": "int",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "int()": {
+        "API": "processing_api_reference",
+        "Category": "Data Conversion",
+        "Name": "int()",
+        "URL": "int_",
+        "Syntax": "int(value)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "join()": {
+        "API": "processing_api_reference",
+        "Category": "String Functions",
+        "Name": "join()",
+        "URL": "join_",
+        "Syntax": "join(stringArray, separator)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "key": {
+        "API": "processing_api_reference",
+        "Category": "Input: Keyboard",
+        "Name": "key",
+        "URL": "key",
+        "Syntax": "key",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "keyCode": {
+        "API": "processing_api_reference",
+        "Category": "Input: Keyboard",
+        "Name": "keyCode",
+        "URL": "keyCode",
+        "Syntax": "keyCode",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "keyPressed": {
+        "API": "processing_api_reference",
+        "Category": "Input: Keyboard",
+        "Name": "keyPressed",
+        "URL": "keyPressed",
+        "Syntax": "keyPressed",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "keyPressed()": {
+        "API": "processing_api_reference",
+        "Category": "Input: Keyboard",
+        "Name": "keyPressed()",
+        "URL": "keyPressed_",
+        "Syntax": "void keyPressed() {  }",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "keyReleased()": {
+        "API": "processing_api_reference",
+        "Category": "Input: Keyboard",
+        "Name": "keyReleased()",
+        "URL": "keyReleased_",
+        "Syntax": "void keyReleased() {  }",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "keyTyped()": {
+        "API": "processing_api_reference",
+        "Category": "Input: Keyboard",
+        "Name": "keyTyped()",
+        "URL": "keyTyped_",
+        "Syntax": "void keyTyped() {  }",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "lerp()": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "lerp()",
+        "URL": "lerp_",
+        "Syntax": "lerp(v1, v2, amount)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "lerpColor()": {
+        "API": "processing_api_reference",
+        "Category": "Color",
+        "Name": "lerpColor()",
+        "URL": "lerpColor_",
+        "Syntax": "lerpColor(c1, c2, amount)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "lightFalloff()": {
+        "API": "processing_api_reference",
+        "Category": "3D Lights",
+        "Name": "lightFalloff()",
+        "URL": "lightFalloff_",
+        "Syntax": "lightFalloff(constant, linear, quadratic)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "lights()": {
+        "API": "processing_api_reference",
+        "Category": "3D Lights",
+        "Name": "lights()",
+        "URL": "lights_",
+        "Syntax": "lights()",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "lightSpecular()": {
+        "API": "processing_api_reference",
+        "Category": "3D Lights",
+        "Name": "lightSpecular()",
+        "URL": "lightSpecular_",
+        "Syntax": "lightSpecular(v1, v2, v3)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "line()": {
+        "API": "processing_api_reference",
+        "Category": "2D Primitives",
+        "Name": "line()",
+        "URL": "line_",
+        "Syntax": "line(x1, y1, x2, y2)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "link()": {
+        "API": "processing_api_reference",
+        "Category": "Input: Web",
+        "Name": "link()",
+        "URL": "link_",
+        "Syntax": "link(url)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "loadBytes()": {
+        "API": "processing_api_reference",
+        "Category": "Input: Files",
+        "Name": "loadBytes()",
+        "URL": "loadBytes_",
+        "Syntax": "loadBytes(filename)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "loadFont()": {
+        "API": "processing_api_reference",
+        "Category": "Typography",
+        "Name": "loadFont()",
+        "URL": "loadFont_",
+        "Syntax": "loadFont(fontname)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "loadImage()": {
+        "API": "processing_api_reference",
+        "Category": "Image",
+        "Name": "loadImage()",
+        "URL": "loadImage_",
+        "Syntax": "loadImage(imagename)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "loadPixels()": {
+        "API": "processing_api_reference",
+        "Category": "Image",
+        "Name": "loadPixels()",
+        "URL": "loadPixels_",
+        "Syntax": "loadPixels()",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "loadShape()": {
+        "API": "processing_api_reference",
+        "Category": "Shape",
+        "Name": "loadShape()",
+        "URL": "loadShape_",
+        "Syntax": "loadShape(filename)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "loadStrings()": {
+        "API": "processing_api_reference",
+        "Category": "Input: Files",
+        "Name": "loadStrings()",
+        "URL": "loadStrings_",
+        "Syntax": "loadStrings(filename)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "log()": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "log()",
+        "URL": "log_",
+        "Syntax": "log(value)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "long": {
+        "API": "processing_api_reference",
+        "Category": "Data Primitives",
+        "Name": "long",
+        "URL": "long",
+        "Syntax": "long",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "loop()": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "loop()",
+        "URL": "loop_",
+        "Syntax": "loop()",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "mag()": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "mag()",
+        "URL": "mag_",
+        "Syntax": "mag(dx, dy)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "map()": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "map()",
+        "URL": "map_",
+        "Syntax": "map(value, low1, high1, low2, high2)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "match()": {
+        "API": "processing_api_reference",
+        "Category": "String Functions",
+        "Name": "match()",
+        "URL": "match_",
+        "Syntax": "match(str, regexp)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "matchAll()": {
+        "API": "processing_api_reference",
+        "Category": "String Functions",
+        "Name": "matchAll()",
+        "URL": "matchAll_",
+        "Syntax": "matchAll(str, regexp)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "max()": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "max()",
+        "URL": "max_",
+        "Syntax": "max(value1, value2)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "millis()": {
+        "API": "processing_api_reference",
+        "Category": "Time & Date",
+        "Name": "millis()",
+        "URL": "millis_",
+        "Syntax": "millis()",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "min()": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "min()",
+        "URL": "min_",
+        "Syntax": "min(value1, value2)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "minute()": {
+        "API": "processing_api_reference",
+        "Category": "Time & Date",
+        "Name": "minute()",
+        "URL": "minute_",
+        "Syntax": "minute()",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "modelX()": {
+        "API": "processing_api_reference",
+        "Category": "3D Coordinates",
+        "Name": "modelX()",
+        "URL": "modelX_",
+        "Syntax": "modelX(x, y, z)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "modelY()": {
+        "API": "processing_api_reference",
+        "Category": "3D Coordinates",
+        "Name": "modelY()",
+        "URL": "modelY_",
+        "Syntax": "modelY(x, y, z)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "modelZ()": {
+        "API": "processing_api_reference",
+        "Category": "3D Coordinates",
+        "Name": "modelZ()",
+        "URL": "modelZ_",
+        "Syntax": "modelZ(x, y, z)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "month()": {
+        "API": "processing_api_reference",
+        "Category": "Time & Date",
+        "Name": "month()",
+        "URL": "month_",
+        "Syntax": "month()",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "mouseButton": {
+        "API": "processing_api_reference",
+        "Category": "Input: Mouse",
+        "Name": "mouseButton",
+        "URL": "mouseButton",
+        "Syntax": "mouseButton",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "mouseClicked()": {
+        "API": "processing_api_reference",
+        "Category": "Input: Mouse",
+        "Name": "mouseClicked()",
+        "URL": "mouseClicked_",
+        "Syntax": "void mouseClicked() {  }",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "mouseDragged()": {
+        "API": "processing_api_reference",
+        "Category": "Input: Mouse",
+        "Name": "mouseDragged()",
+        "URL": "mouseDragged_",
+        "Syntax": "void mouseDragged() {  }",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "mouseMoved()": {
+        "API": "processing_api_reference",
+        "Category": "Input: Mouse",
+        "Name": "mouseMoved()",
+        "URL": "mouseMoved_",
+        "Syntax": "void mouseMoved() {  }",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "mouseOut()": {
+        "API": "processing_api_reference",
+        "Category": "Input: Mouse",
+        "Name": "mouseOut()",
+        "URL": "mouseOut_",
+        "Syntax": "void mouseOut() {  }",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "mouseOver()": {
+        "API": "processing_api_reference",
+        "Category": "Input: Mouse",
+        "Name": "mouseOver()",
+        "URL": "mouseOver_",
+        "Syntax": "void mouseOver() {  }",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "mousePressed": {
+        "API": "processing_api_reference",
+        "Category": "Input: Mouse",
+        "Name": "mousePressed",
+        "URL": "mousePressed",
+        "Syntax": "mousePressed",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "mousePressed()": {
+        "API": "processing_api_reference",
+        "Category": "Input: Mouse",
+        "Name": "mousePressed()",
+        "URL": "mousePressed_",
+        "Syntax": "void mousePressed() {  }",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "mouseReleased()": {
+        "API": "processing_api_reference",
+        "Category": "Input: Mouse",
+        "Name": "mouseReleased()",
+        "URL": "mouseReleased_",
+        "Syntax": "void mouseReleased() {  }",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "mouseX": {
+        "API": "processing_api_reference",
+        "Category": "Input: Mouse",
+        "Name": "mouseX",
+        "URL": "mouseX",
+        "Syntax": "mouseX",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "mouseY": {
+        "API": "processing_api_reference",
+        "Category": "Input: Mouse",
+        "Name": "mouseY",
+        "URL": "mouseY",
+        "Syntax": "mouseY",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "new": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "new",
+        "URL": "new",
+        "Syntax": "new",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "nf()": {
+        "API": "processing_api_reference",
+        "Category": "String Functions",
+        "Name": "nf()",
+        "URL": "nf_",
+        "Syntax": "nf(value, digits)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "nfc()": {
+        "API": "processing_api_reference",
+        "Category": "String Functions",
+        "Name": "nfc()",
+        "URL": "nfc_",
+        "Syntax": "nfc(value)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "nfp()": {
+        "API": "processing_api_reference",
+        "Category": "String Functions",
+        "Name": "nfp()",
+        "URL": "nfp_",
+        "Syntax": "nfp(value, digits)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "nfs()": {
+        "API": "processing_api_reference",
+        "Category": "String Functions",
+        "Name": "nfs()",
+        "URL": "nfs_",
+        "Syntax": "nfs(value, digits)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "noCursor()": {
+        "API": "processing_api_reference",
+        "Category": "Environment",
+        "Name": "noCursor()",
+        "URL": "noCursor_",
+        "Syntax": "noCursor()",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "noFill()": {
+        "API": "processing_api_reference",
+        "Category": "Color",
+        "Name": "noFill()",
+        "URL": "noFill_",
+        "Syntax": "noFill()",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "noise()": {
+        "API": "processing_api_reference",
+        "Category": "Random",
+        "Name": "noise()",
+        "URL": "noise_",
+        "Syntax": "noise(x, y)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "noiseDetail()": {
+        "API": "processing_api_reference",
+        "Category": "Random",
+        "Name": "noiseDetail()",
+        "URL": "noiseDetail_",
+        "Syntax": "noiseDetail(octaves)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "noiseSeed()": {
+        "API": "processing_api_reference",
+        "Category": "Random",
+        "Name": "noiseSeed()",
+        "URL": "noiseSeed_",
+        "Syntax": "noiseSeed(value)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "noLights()": {
+        "API": "processing_api_reference",
+        "Category": "3D Lights",
+        "Name": "noLights()",
+        "URL": "noLights_",
+        "Syntax": "noLights()",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "noLoop()": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "noLoop()",
+        "URL": "noLoop_",
+        "Syntax": "noLoop()",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "norm()": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "norm()",
+        "URL": "norm_",
+        "Syntax": "norm(value, low, high)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "normal()": {
+        "API": "processing_api_reference",
+        "Category": "3D Lights",
+        "Name": "normal()",
+        "URL": "normal_",
+        "Syntax": "normal(nx, ny, nz)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "noSmooth()": {
+        "API": "processing_api_reference",
+        "Category": "Attributes",
+        "Name": "noSmooth()",
+        "URL": "noSmooth_",
+        "Syntax": "noSmooth()",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "noStroke()": {
+        "API": "processing_api_reference",
+        "Category": "Color",
+        "Name": "noStroke()",
+        "URL": "noStroke_",
+        "Syntax": "noStroke()",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "noTint()": {
+        "API": "processing_api_reference",
+        "Category": "Image",
+        "Name": "noTint()",
+        "URL": "noTint_",
+        "Syntax": "noTint()",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "null": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "null",
+        "URL": "null",
+        "Syntax": "null",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "Object": {
+        "API": "processing_api_reference",
+        "Category": "Data Composite",
+        "Name": "Object",
+        "URL": "Object",
+        "Syntax": "MyClass myInstance = new MyClass();",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "online": {
+        "API": "processing_api_reference",
+        "Category": "Environment",
+        "Name": "online",
+        "URL": "online",
+        "Syntax": "online",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "ortho()": {
+        "API": "processing_api_reference",
+        "Category": "3D Camera",
+        "Name": "ortho()",
+        "URL": "ortho_",
+        "Syntax": "ortho(left, right, bottom, top, near, far)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "pauseOnBlur": {
+        "API": "processing_api_reference",
+        "Category": "@pjs directives",
+        "Name": "pauseOnBlur",
+        "URL": "pauseOnBlur",
+        "Syntax": "/* @pjs pauseOnBlur=\"true\"; */",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "perspective()": {
+        "API": "processing_api_reference",
+        "Category": "3D Camera",
+        "Name": "perspective()",
+        "URL": "perspective_",
+        "Syntax": "perspective(fov, aspect, zNear, zFar)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "PFont": {
+        "API": "processing_api_reference",
+        "Category": "Typography",
+        "Name": "PFont",
+        "URL": "PFont",
+        "Syntax": "PFont",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "PGraphics": {
+        "API": "processing_api_reference",
+        "Category": "Rendering",
+        "Name": "PGraphics",
+        "URL": "PGraphics",
+        "Syntax": "PGraphics",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "PI (3.14159…)": {
+        "API": "processing_api_reference",
+        "Category": "Constants",
+        "Name": "PI (3.14159…)",
+        "URL": "PI",
+        "Syntax": "PI",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "PImage": {
+        "API": "processing_api_reference",
+        "Category": "Image",
+        "Name": "PImage",
+        "URL": "PImage",
+        "Syntax": "PImage",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "pixels[]": {
+        "API": "processing_api_reference",
+        "Category": "Image",
+        "Name": "pixels[ ]",
+        "URL": "pixels",
+        "Syntax": "pixels[index]",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "pmouseX": {
+        "API": "processing_api_reference",
+        "Category": "Input: Mouse",
+        "Name": "pmouseX",
+        "URL": "pmouseX",
+        "Syntax": "pmouseX",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "pmouseY": {
+        "API": "processing_api_reference",
+        "Category": "Input: Mouse",
+        "Name": "pmouseY",
+        "URL": "pmouseY",
+        "Syntax": "pmouseY",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "point()": {
+        "API": "processing_api_reference",
+        "Category": "2D Primitives",
+        "Name": "point()",
+        "URL": "point_",
+        "Syntax": "point(x, y)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "pointLight()": {
+        "API": "processing_api_reference",
+        "Category": "3D Lights",
+        "Name": "pointLight()",
+        "URL": "pointLight_",
+        "Syntax": "pointLight(v1, v2, v3, nx, ny, nz)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "popMatrix()": {
+        "API": "processing_api_reference",
+        "Category": "Transform",
+        "Name": "popMatrix()",
+        "URL": "popMatrix_",
+        "Syntax": "popMatrix()",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "popStyle()": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "popStyle()",
+        "URL": "popStyle_",
+        "Syntax": "popStyle()",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "pow()": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "pow()",
+        "URL": "pow_",
+        "Syntax": "pow(num, exponent)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "preload": {
+        "API": "processing_api_reference",
+        "Category": "@pjs directives",
+        "Name": "preload",
+        "URL": "preload",
+        "Syntax": "/* @pjs preload=\"imageURL\"; */",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "print()": {
+        "API": "processing_api_reference",
+        "Category": "Output: Console",
+        "Name": "print()",
+        "URL": "print_",
+        "Syntax": "print(data)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "printCamera()": {
+        "API": "processing_api_reference",
+        "Category": "3D Camera",
+        "Name": "printCamera()",
+        "URL": "printCamera_",
+        "Syntax": "printCamera()",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "println()": {
+        "API": "processing_api_reference",
+        "Category": "Output: Console",
+        "Name": "println()",
+        "URL": "println_",
+        "Syntax": "println(data)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "printMatrix()": {
+        "API": "processing_api_reference",
+        "Category": "Transform",
+        "Name": "printMatrix()",
+        "URL": "printMatrix_",
+        "Syntax": "printMatrix()",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "printProjection()": {
+        "API": "processing_api_reference",
+        "Category": "3D Camera",
+        "Name": "printProjection()",
+        "URL": "printProjection_",
+        "Syntax": "printProjection()",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "private": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "private",
+        "URL": "private",
+        "Syntax": "private",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "PShape": {
+        "API": "processing_api_reference",
+        "Category": "Shape",
+        "Name": "PShape",
+        "URL": "PShape",
+        "Syntax": "PShape",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "public": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "public",
+        "URL": "public",
+        "Syntax": "public",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "pushMatrix()": {
+        "API": "processing_api_reference",
+        "Category": "Transform",
+        "Name": "pushMatrix()",
+        "URL": "pushMatrix_",
+        "Syntax": "pushMatrix()",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "pushStyle()": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "pushStyle()",
+        "URL": "pushStyle_",
+        "Syntax": "pushStyle()",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "PVector": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "PVector",
+        "URL": "PVector",
+        "Syntax": "PVector",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "quad()": {
+        "API": "processing_api_reference",
+        "Category": "2D Primitives",
+        "Name": "quad()",
+        "URL": "quad_",
+        "Syntax": "quad(x1, y1, x2, y2, x3 y3, x4, y4)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "QUARTER_PI (0.78539…)": {
+        "API": "processing_api_reference",
+        "Category": "Constants",
+        "Name": "QUARTER_PI (0.78539…)",
+        "URL": "QUARTER_PI",
+        "Syntax": "QUARTER_PI",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "radians()": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "radians()",
+        "URL": "radians_",
+        "Syntax": "radians(angle)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "random()": {
+        "API": "processing_api_reference",
+        "Category": "Random",
+        "Name": "random()",
+        "URL": "random_",
+        "Syntax": "random(low, high)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "randomSeed()": {
+        "API": "processing_api_reference",
+        "Category": "Random",
+        "Name": "randomSeed()",
+        "URL": "randomSeed_",
+        "Syntax": "randomSeed(value)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "rect()": {
+        "API": "processing_api_reference",
+        "Category": "2D Primitives",
+        "Name": "rect()",
+        "URL": "rect_",
+        "Syntax": "rect(x, y, width, height)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "rectMode()": {
+        "API": "processing_api_reference",
+        "Category": "Attributes",
+        "Name": "rectMode()",
+        "URL": "rectMode_",
+        "Syntax": "rectMode(MODE)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "red()": {
+        "API": "processing_api_reference",
+        "Category": "Color",
+        "Name": "red()",
+        "URL": "red_",
+        "Syntax": "red(color)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "redraw()": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "redraw()",
+        "URL": "redraw_",
+        "Syntax": "redraw()",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "requestImage()": {
+        "API": "processing_api_reference",
+        "Category": "Image",
+        "Name": "requestImage()",
+        "URL": "requestImage_",
+        "Syntax": "requestImage(filename)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "resetMatrix()": {
+        "API": "processing_api_reference",
+        "Category": "Transform",
+        "Name": "resetMatrix()",
+        "URL": "resetMatrix_",
+        "Syntax": "resetMatrix()",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "return": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "return",
+        "URL": "return",
+        "Syntax": "return",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "reverse()": {
+        "API": "processing_api_reference",
+        "Category": "Array Functions",
+        "Name": "reverse()",
+        "URL": "reverse_",
+        "Syntax": "reverse(array)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "rotate()": {
+        "API": "processing_api_reference",
+        "Category": "Transform",
+        "Name": "rotate()",
+        "URL": "rotate_",
+        "Syntax": "rotate(angle)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "rotateX()": {
+        "API": "processing_api_reference",
+        "Category": "Transform",
+        "Name": "rotateX()",
+        "URL": "rotateX_",
+        "Syntax": "rotateX(angle)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "rotateY()": {
+        "API": "processing_api_reference",
+        "Category": "Transform",
+        "Name": "rotateY()",
+        "URL": "rotateY_",
+        "Syntax": "rotateY(angle)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "rotateZ()": {
+        "API": "processing_api_reference",
+        "Category": "Transform",
+        "Name": "rotateZ()",
+        "URL": "rotateZ_",
+        "Syntax": "rotateZ(angle)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "round()": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "round()",
+        "URL": "round_",
+        "Syntax": "round(value)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "saturation()": {
+        "API": "processing_api_reference",
+        "Category": "Color",
+        "Name": "saturation()",
+        "URL": "saturation_",
+        "Syntax": "saturation(color)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "save()": {
+        "API": "processing_api_reference",
+        "Category": "Output: Image",
+        "Name": "save()",
+        "URL": "save_",
+        "Syntax": "save(filename)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "saveFrame()": {
+        "API": "processing_api_reference",
+        "Category": "Output: Image",
+        "Name": "saveFrame()",
+        "URL": "saveFrame_",
+        "Syntax": "saveFrame(filename-####.ext)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "saveStrings()": {
+        "API": "processing_api_reference",
+        "Category": "Output: Files",
+        "Name": "saveStrings()",
+        "URL": "saveStrings_",
+        "Syntax": "saveStrings(filename, strings)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "scale()": {
+        "API": "processing_api_reference",
+        "Category": "Transform",
+        "Name": "scale()",
+        "URL": "scale_",
+        "Syntax": "scale(size)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "screen": {
+        "API": "processing_api_reference",
+        "Category": "Environment",
+        "Name": "screen",
+        "URL": "screen",
+        "Syntax": "screen",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "screenX()": {
+        "API": "processing_api_reference",
+        "Category": "3D Coordinates",
+        "Name": "screenX()",
+        "URL": "screenX_",
+        "Syntax": "screenX(x, y, z)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "screenY()": {
+        "API": "processing_api_reference",
+        "Category": "3D Coordinates",
+        "Name": "screenY()",
+        "URL": "screenY_",
+        "Syntax": "screenY(x, y, z)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "screenZ()": {
+        "API": "processing_api_reference",
+        "Category": "3D Coordinates",
+        "Name": "screenZ()",
+        "URL": "screenZ_",
+        "Syntax": "screenZ(x, y, z)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "second()": {
+        "API": "processing_api_reference",
+        "Category": "Time & Date",
+        "Name": "second()",
+        "URL": "second_",
+        "Syntax": "second()",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "set()": {
+        "API": "processing_api_reference",
+        "Category": "Image",
+        "Name": "set()",
+        "URL": "set_",
+        "Syntax": "set(x, y, color)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "setup()": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "setup()",
+        "URL": "setup_",
+        "Syntax": "void setup() {  }",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "shape()": {
+        "API": "processing_api_reference",
+        "Category": "Shape",
+        "Name": "shape()",
+        "URL": "shape_",
+        "Syntax": "shape(sh, x, y, width, height)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "shapeMode()": {
+        "API": "processing_api_reference",
+        "Category": "Shape",
+        "Name": "shapeMode()",
+        "URL": "shapeMode_",
+        "Syntax": "shapeMode(MODE)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "shininess()": {
+        "API": "processing_api_reference",
+        "Category": "3D Material",
+        "Name": "shininess()",
+        "URL": "shininess_",
+        "Syntax": "shininess(shine)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "shorten()": {
+        "API": "processing_api_reference",
+        "Category": "Array Functions",
+        "Name": "shorten()",
+        "URL": "shorten_",
+        "Syntax": "shorten(array)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "sin()": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "sin()",
+        "URL": "sin_",
+        "Syntax": "sin(radians)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "size()": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "size()",
+        "URL": "size_",
+        "Syntax": "size(width, height)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "smooth()": {
+        "API": "processing_api_reference",
+        "Category": "Attributes",
+        "Name": "smooth()",
+        "URL": "smooth_",
+        "Syntax": "smooth()",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "sort()": {
+        "API": "processing_api_reference",
+        "Category": "Array Functions",
+        "Name": "sort()",
+        "URL": "sort_",
+        "Syntax": "sort(array)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "specular()": {
+        "API": "processing_api_reference",
+        "Category": "3D Material",
+        "Name": "specular()",
+        "URL": "specular_",
+        "Syntax": "specular(color)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "sphere()": {
+        "API": "processing_api_reference",
+        "Category": "3D Primitives",
+        "Name": "sphere()",
+        "URL": "sphere_",
+        "Syntax": "sphere(radius)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "sphereDetail()": {
+        "API": "processing_api_reference",
+        "Category": "3D Primitives",
+        "Name": "sphereDetail()",
+        "URL": "sphereDetail_",
+        "Syntax": "sphereDetail(res)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "splice()": {
+        "API": "processing_api_reference",
+        "Category": "Array Functions",
+        "Name": "splice()",
+        "URL": "splice_",
+        "Syntax": "splice(array, value, index)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "split()": {
+        "API": "processing_api_reference",
+        "Category": "String Functions",
+        "Name": "split()",
+        "URL": "split_",
+        "Syntax": "split(string, delimiter)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "splitTokens()": {
+        "API": "processing_api_reference",
+        "Category": "String Functions",
+        "Name": "splitTokens()",
+        "URL": "splitTokens_",
+        "Syntax": "splitTokens(string)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "spotLight()": {
+        "API": "processing_api_reference",
+        "Category": "3D Lights",
+        "Name": "spotLight()",
+        "URL": "spotLight_",
+        "Syntax": "spotLight(v1, v2, v3, nx, ny, nz, angle, concentration)",
+        "Online": 1,
+        "Hidden": 1
+    },
+    "sq()": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "sq()",
+        "URL": "sq_",
+        "Syntax": "sq(value)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "sqrt()": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "sqrt()",
+        "URL": "sqrt_",
+        "Syntax": "sqrt(value)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "static": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "static",
+        "URL": "static",
+        "Syntax": "static",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "status()": {
+        "API": "processing_api_reference",
+        "Category": "Input: Web",
+        "Name": "status()",
+        "URL": "status_",
+        "Syntax": "status(text)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "str()": {
+        "API": "processing_api_reference",
+        "Category": "Data Conversion",
+        "Name": "str()",
+        "URL": "str_",
+        "Syntax": "str(data)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "String": {
+        "API": "processing_api_reference",
+        "Category": "Data Composite",
+        "Name": "String",
+        "URL": "String",
+        "Syntax": "String",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "stroke()": {
+        "API": "processing_api_reference",
+        "Category": "Color",
+        "Name": "stroke()",
+        "URL": "stroke_",
+        "Syntax": "stroke(color)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "strokeCap()": {
+        "API": "processing_api_reference",
+        "Category": "Attributes",
+        "Name": "strokeCap()",
+        "URL": "strokeCap_",
+        "Syntax": "strokeCap(MODE)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "strokeJoin()": {
+        "API": "processing_api_reference",
+        "Category": "Attributes",
+        "Name": "strokeJoin()",
+        "URL": "strokeJoin_",
+        "Syntax": "strokeJoin(MODE)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "strokeWeight()": {
+        "API": "processing_api_reference",
+        "Category": "Attributes",
+        "Name": "strokeWeight()",
+        "URL": "strokeWeight_",
+        "Syntax": "strokeWeight(width)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "subset()": {
+        "API": "processing_api_reference",
+        "Category": "Array Functions",
+        "Name": "subset()",
+        "URL": "subset_",
+        "Syntax": "subset(array, offset)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "super": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "super",
+        "URL": "super",
+        "Syntax": "super",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "switch()": {
+        "API": "processing_api_reference",
+        "Category": "Conditionals",
+        "Name": "switch()",
+        "URL": "switch_",
+        "Syntax": "switch(expression) {  }",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "tan()": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "tan()",
+        "URL": "tan_",
+        "Syntax": "tan(angle)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "text()": {
+        "API": "processing_api_reference",
+        "Category": "Typography",
+        "Name": "text()",
+        "URL": "text_",
+        "Syntax": "text(string, x, y)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "textAlign()": {
+        "API": "processing_api_reference",
+        "Category": "Typography",
+        "Name": "textAlign()",
+        "URL": "textAlign_",
+        "Syntax": "textAlign(LEFT)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "textAscent()": {
+        "API": "processing_api_reference",
+        "Category": "Typography",
+        "Name": "textAscent()",
+        "URL": "textAscent_",
+        "Syntax": "textAscent()",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "textDescent()": {
+        "API": "processing_api_reference",
+        "Category": "Typography",
+        "Name": "textDescent()",
+        "URL": "textDescent_",
+        "Syntax": "textDescent()",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "textFont()": {
+        "API": "processing_api_reference",
+        "Category": "Typography",
+        "Name": "textFont()",
+        "URL": "textFont_",
+        "Syntax": "textFont(font, size)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "textLeading()": {
+        "API": "processing_api_reference",
+        "Category": "Typography",
+        "Name": "textLeading()",
+        "URL": "textLeading_",
+        "Syntax": "textLeading(height)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "textMode()": {
+        "API": "processing_api_reference",
+        "Category": "Typography",
+        "Name": "textMode()",
+        "URL": "textMode_",
+        "Syntax": "textMode(MODE)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "textSize()": {
+        "API": "processing_api_reference",
+        "Category": "Typography",
+        "Name": "textSize()",
+        "URL": "textSize_",
+        "Syntax": "textSize(size)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "texture()": {
+        "API": "processing_api_reference",
+        "Category": "Shape",
+        "Name": "texture()",
+        "URL": "texture_",
+        "Syntax": "texture(img)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "textureMode()": {
+        "API": "processing_api_reference",
+        "Category": "Shape",
+        "Name": "textureMode()",
+        "URL": "textureMode_",
+        "Syntax": "textureMode(MODE)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "textWidth()": {
+        "API": "processing_api_reference",
+        "Category": "Typography",
+        "Name": "textWidth()",
+        "URL": "textWidth_",
+        "Syntax": "textWidth(string)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "this": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "this",
+        "URL": "this",
+        "Syntax": "this",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "tint()": {
+        "API": "processing_api_reference",
+        "Category": "Image",
+        "Name": "tint()",
+        "URL": "tint_",
+        "Syntax": "tint(color)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "Touch": {
+        "API": "processing_api_reference",
+        "Category": "Input: Touch",
+        "Name": "Touch",
+        "URL": "Touch",
+        "Syntax": "Touch",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "touchCancel()": {
+        "API": "processing_api_reference",
+        "Category": "Input: Touch",
+        "Name": "touchCancel()",
+        "URL": "touchCancel_",
+        "Syntax": "void touchCancel() {  }",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "touchEnd()": {
+        "API": "processing_api_reference",
+        "Category": "Input: Touch",
+        "Name": "touchEnd()",
+        "URL": "touchEnd_",
+        "Syntax": "void touchEnd() {  }",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "TouchEvent": {
+        "API": "processing_api_reference",
+        "Category": "Input: Touch",
+        "Name": "TouchEvent",
+        "URL": "TouchEvent",
+        "Syntax": "TouchEvent",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "TouchList": {
+        "API": "processing_api_reference",
+        "Category": "Input: Touch",
+        "Name": "TouchList",
+        "URL": "TouchList",
+        "Syntax": "TouchList",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "touchMove()": {
+        "API": "processing_api_reference",
+        "Category": "Input: Touch",
+        "Name": "touchMove()",
+        "URL": "touchMove_",
+        "Syntax": "void touchMove() {  }",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "touchStart()": {
+        "API": "processing_api_reference",
+        "Category": "Input: Touch",
+        "Name": "touchStart()",
+        "URL": "touchStart_",
+        "Syntax": "void touchStart() {  }",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "translate()": {
+        "API": "processing_api_reference",
+        "Category": "Transform",
+        "Name": "translate()",
+        "URL": "translate_",
+        "Syntax": "translate(x, y)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "triangle()": {
+        "API": "processing_api_reference",
+        "Category": "2D Primitives",
+        "Name": "triangle()",
+        "URL": "triangle_",
+        "Syntax": "triangle(x1, y1, x2, y2, x3, y3)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "trim()": {
+        "API": "processing_api_reference",
+        "Category": "String Functions",
+        "Name": "trim()",
+        "URL": "trim_",
+        "Syntax": "trim(array)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "true": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "true",
+        "URL": "true",
+        "Syntax": "true",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "TWO_PI (6.28318…)": {
+        "API": "processing_api_reference",
+        "Category": "Constants",
+        "Name": "TWO_PI (6.28318…)",
+        "URL": "TWO_PI",
+        "Syntax": "TWO_PI",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "unbinary()": {
+        "API": "processing_api_reference",
+        "Category": "Data Conversion",
+        "Name": "unbinary()",
+        "URL": "unbinary_",
+        "Syntax": "unbinary(string)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "unhex()": {
+        "API": "processing_api_reference",
+        "Category": "Data Conversion",
+        "Name": "unhex()",
+        "URL": "unhex_",
+        "Syntax": "unhex(string)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "updatePixels()": {
+        "API": "processing_api_reference",
+        "Category": "Image",
+        "Name": "updatePixels()",
+        "URL": "updatePixels_",
+        "Syntax": "updatePixels()",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "vertex()": {
+        "API": "processing_api_reference",
+        "Category": "Shape",
+        "Name": "vertex()",
+        "URL": "vertex_",
+        "Syntax": "vertex(x, y)",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "void": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "void",
+        "URL": "void",
+        "Syntax": "void",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "while()": {
+        "API": "processing_api_reference",
+        "Category": "Iteration",
+        "Name": "while()",
+        "URL": "while_",
+        "Syntax": "while(expression) {  }",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "width": {
+        "API": "processing_api_reference",
+        "Category": "Environment",
+        "Name": "width",
+        "URL": "width",
+        "Syntax": "width",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "XMLElement": {
+        "API": "processing_api_reference",
+        "Category": "Data Composite",
+        "Name": "XMLElement",
+        "URL": "XMLElement",
+        "Syntax": "XMLElement",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "year()": {
+        "API": "processing_api_reference",
+        "Category": "Time & Date",
+        "Name": "year()",
+        "URL": "year_",
+        "Syntax": "year()",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "[] (array access)": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "[] (array access)",
+        "URL": "array access",
+        "Syntax": "array[index]",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "{} (curly braces)": {
+        "API": "processing_api_reference",
+        "Category": "Structure",
+        "Name": "{} (curly braces)",
+        "URL": "curly braces",
+        "Syntax": "{  }",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "| (bitwise OR)": {
+        "API": "processing_api_reference",
+        "Category": "Math",
+        "Name": "| (bitwise OR)",
+        "URL": "bitwise OR",
+        "Syntax": "|",
+        "Online": 1,
+        "Hidden": 0
+    },
+    "|| (logical AND)": {
+        "API": "processing_api_reference",
+        "Category": "Logical Operators",
+        "Name": "|| (logical OR)",
+        "URL": "logical OR",
+        "Syntax": "||",
+        "Online": 1,
+        "Hidden": 0
+    }
+}

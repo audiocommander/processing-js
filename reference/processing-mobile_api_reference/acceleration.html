@@ -1,0 +1,103 @@
+
+<table cellpadding="0" cellspacing="0" border="0" class="ref-item">
+
+	<tr class="name-row">
+
+		<th scope="row">Name</th>
+
+		<td><h3>Acceleration</h3></td>
+
+
+
+	</tr>
+
+
+
+	<tr class="">
+
+		<th scope="row">Examples</th>
+
+		<td><div class="example"><pre>
+		
+void draw() {
+
+  fill(255);
+  // map acceleration values from the expected acceleration.x range (-10 to +10) to the full width (0 to width)
+  int x = map(acceleration.x, -10, 10, 0, width);
+  rect(x, 100, 100, 100);
+  
+}
+
+		</pre></div></td>
+
+	</tr>
+
+
+
+	<tr class="">
+
+		<th scope="row">Description</th>
+
+
+		<td>The <b>Acceleration</b> object contains the acceleration data for the device in m/s^2 along the x, y and z axes.<br/>In contrast to the <a href="orientation">orientation</a> object, it is available on most devices.<br/>
+		&nbsp;<br/>
+		For further informations see <b><a href="http://www.html5rocks.com/en/tutorials/device/orientation/">html5rocks.com/en/tutorials/device/orientation/</a></b> and <b><a href="http://dev.w3.org/geo/api/spec-source.html">dev.w3.org/geo/api/spec-source.html</a></b>.<br/>
+		&nbsp;<br/>
+		<strong>Note that this object is only available in Processing-mobile.js and not compatible with Processing.</td>
+
+	</tr>
+
+
+
+	<tr class="">
+	
+			<th scope="row">Fields</th>
+	
+			<td>(float) x: device acceleration in m/s^2 along the X axis</td>
+			<td>(float) y: device acceleration in m/s^2 along the Y axis</td>
+			<td>(float) z: device acceleration in m/s^2 along the Z axis</td>
+	
+	</tr>
+	
+		
+	<tr class="">
+
+		<th scope="row">Syntax</th>
+
+		<td>acceleration.x</td>
+		<td>acceleration.y</td>
+		<td>acceleration.z</td>
+
+	</tr>
+
+
+
+
+	<tr class="">
+
+		<th scope="row">Usage</th>
+
+		<td>Web</td>
+
+	</tr>
+
+
+
+	<tr class="">
+
+		<th scope="row">Related</th>
+
+		<td><!--a href="acceleration">acceleration</a><br /-->
+	
+		<!--a href="coords">coords</a><br /-->
+			
+		<a href="locationChanged_">locationChanged()</a><br />
+
+	    <a href="orientation">orientation</a><br />
+
+	</tr>
+
+</table>
+
+
+

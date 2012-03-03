@@ -3,7 +3,7 @@
 // 
 // Version History
 // 0.1  2011-11-01  first version
-// 0.2	2012-01-19	fixed keyCode bug in PR0C3551N6
+// 0.2	2012-01-19	fixed keyCode bug in PR0C0D1N6
 // 0.3	2012-01-21	general processing compatibility
 
 
@@ -22,8 +22,8 @@ void setup() {
   
   // setup font & text
   //font = createFont("Menlo-Regular", 10); // for processing
-  font = createFont("Menlo", fontsize);  // for PR0C3551N6
-  // Menlo comes with PR0C3551N6
+  font = createFont("Menlo", fontsize);  // for PR0C0D1N6
+  // Menlo comes with PR0C0D1N6
   // see iosfonts.com for available fonts on iOS
   textFont(font);
   textAlign(CENTER, CENTER);
