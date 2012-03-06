@@ -1,5 +1,5 @@
 // Processing Example
-// originally taken from http://processingjs.org
+// from processingjs.org
 // Modified by Michael Markert for PR0C0D1N6
 
 

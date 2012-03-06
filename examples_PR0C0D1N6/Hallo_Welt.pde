@@ -1,5 +1,5 @@
 // Text & Keyboard Input Test
-// (cc) BY-SA by Michael Markert
+// by Michael Markert
 // 
 // Version History
 // 0.1  2011-11-01  first version

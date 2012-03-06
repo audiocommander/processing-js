@@ -1,5 +1,7 @@
-// Examples Written by Casey Reas and Ben Fry  
-// taken from http://processingjs.org/learning
+// Bouncy Bubbles
+// from processingjs.org
+// Based on code from Keith Peters (www.bit-101.com)
+// Multiple-object collision
 
 
 int numBalls = 20;  

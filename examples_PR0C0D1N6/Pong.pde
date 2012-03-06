@@ -1,5 +1,6 @@
-// Written by Casey Reas and Ben Fry
-// Adapted for PR0C0D1N6 and added motion control by Michael Markert
+// Collision Example from processingjs.org
+// Adapted for PR0C0D1N6 and
+// Added motion control by Michael Markert
 
 int s = (int)(width/40);
 float ball_x;

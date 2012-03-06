@@ -1,5 +1,5 @@
-// Text Test
-// (cc) by Michael Markert
+// Digital Clock
+// by Michael Markert for PR0C0D1N6
 // 
 // Version History
 // 0.1  2011-11-01  first version

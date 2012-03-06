@@ -1,7 +1,7 @@
 // Multitouch Example
 // For processing-js
 // Created 2012-01-10 for PR0C0D1N6 
-// (cc) BY-NC by Michael Markert
+// by Michael Markert
 //
 // Note to iPad Users:
 // If you have enabled "Multitasking Gestures"

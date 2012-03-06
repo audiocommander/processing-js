@@ -1,5 +1,6 @@
-// Example Written by Casey Reas and Ben Fry
-// processing.org
+// Conway's Game of Life
+// Originally written by Mike Davis
+// taken from processingjs.org
 
 int sx, sy; 
 float density = 0.5; 

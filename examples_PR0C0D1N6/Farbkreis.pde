@@ -1,5 +1,5 @@
 // Farbkreis
-// (cc) by Michael Markert
+// by Michael Markert
 // 
 // Version History
 // 0.1  2009-12-28  first version
