@@ -1,6 +1,6 @@
 // Processing Example
 // from processingjs.org
-// Modified by Michael Markert for PR0C0D1N6
+// Modified by Michael Markert for Procoding
 
 
 float radius = width/4;
