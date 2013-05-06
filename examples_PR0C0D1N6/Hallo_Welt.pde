@@ -1,5 +1,5 @@
 // Text & Keyboard Input Test
-// by Michael Markert
+// (cc-by) by Michael Markert for Procoding
 // 
 // Version History
 // 0.1  2011-11-01  first version
