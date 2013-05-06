@@ -1,5 +1,5 @@
 // Motion Event Demo
-// for PR0C0D1N6 by Michael Markert
+// (cc-by) by Michael Markert for Procoding
 //
 // alpha, beta & gamma are only available for devices with gyroscope (iPad >=2, iPhone >=4)
 
