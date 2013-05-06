@@ -1,5 +1,5 @@
 // Farbkreis
-// by Michael Markert
+// (cc-by) by Michael Markert for Procoding
 // 
 // Version History
 // 0.1  2009-12-28  first version
