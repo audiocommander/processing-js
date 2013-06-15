@@ -20085,7 +20085,7 @@
 
   Processing.logger = tinylogLite;
 
-  Processing.version = "@VERSION@";
+  Processing.version = "1.4.1";
 
   // Share lib space
   Processing.lib = {};
@@ -20421,18 +20421,4 @@
     this.Processing = Processing;
   }
 }(window, window.document, Math));
-ContentLoaded', init, false);
-    }
-  };
-//#endif
 
-  if(isDOMPresent) {
-    window['Processing'] = Processing;
-//#if PARSER
-    document.addEventListener('DOMContentLoaded', init, false);
-//#endif
-  } else {
-    // DOM is not found
-    this.Processing = Processing;
-  }
-}(window, window.document, Math));
