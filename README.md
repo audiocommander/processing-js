@@ -1,10 +1,10 @@
-
 Processing.js - @VERSION@
 =========================
 a port of the Processing visualization language
 
-This is a fork of the official processingjs project for PR0C0D1N6:
-http://procoding.audiocommander.de
+`This is a fork of the official processingjs project for Procoding:`
+`http://procoding.audiocommander.de`
+
 
 About Us
 --------
@@ -111,7 +111,7 @@ Some web browsers (e.g., Chrome) require secondary files to be loaded from a
 web server for security reasons.  This means loading a web page that references
 a Processing.js sketch in a file via a file:/// URL vs. http:// will fail. You
 are particularly likely to run into this problem when you try to view your
-webpage directly from file, as this makes all relatively links file:/// links.
+webpage directly from file, as this makes all relative links file:/// links.
 
 There are several ways to get around this problem. You can use a browser which
 does allow file:/// access, although most current browsers either have, or plan
@@ -132,12 +132,12 @@ you turn it back on. While "easy", this is unsafe.
 Learn More About Processing.js
 -------------------------------
 Processing developers should start with the Processing.js Quick Start Guide for
-Processing Developers at http://processingjs.org/reference/articles/p5QuickStart.
+Processing Developers at http://processingjs.org/articles/p5QuickStart.html
 
 JavaScript developers should start with the Processing.js Quick Start Guide for
-JavaScript Developers at http://processingjs.org/reference/articles/jsQuickStart
+JavaScript Developers at http://processingjs.org/articles/jsQuickStart.html
 
-A more detailed guide is http://processingjs.org/reference/articles/PomaxGuide.
+A more detailed guide is http://processingjs.org/articles/PomaxGuide.html
 
 A complete reference of all Processing.js functions and variables is available
 at http://processingjs.org/reference.
