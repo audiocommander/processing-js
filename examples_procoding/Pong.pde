@@ -1,6 +1,7 @@
 // Collision Example from processingjs.org
-// Adapted for PR0C0D1N6 and
+// Adapted for Procoding and
 // Added motion control by Michael Markert
+
 
 int s = (int)(width/40);
 float ball_x;
