@@ -17,6 +17,21 @@
 
 (function(window, document, Math, undef) {
 
+  // Procoding Fix:
+  // throwing strings is generally a bad idead, usually instances of Error() are expected
+  // the best solution would be a special ProcessingError(), but at least we can intercept 
+  // the errors here and then trow:
+  var throwError = function(msg) {
+    // log to tinylog
+	Processing.logger.log(msg);
+	// and throw
+	if(typeof msg === "string") {
+	  throw new Error(msg);
+	} else {
+	  throw msg;
+	}
+  }
+
   var nop = function(){};
 
   var debug = (function() {
@@ -37,7 +52,7 @@
     xhr.setRequestHeader("If-Modified-Since", "Fri, 01 Jan 1960 00:00:00 GMT");
     xhr.send(null);
     // failed request?
-    if (xhr.status !== 200 && xhr.status !== 0) { throw ("XMLHttpRequest failed, status code " + xhr.status); }
+    if (xhr.status !== 200 && xhr.status !== 0) { throwError ("XMLHttpRequest failed, status code " + xhr.status); }
     return xhr.responseText;
   };
 
@@ -75,7 +90,7 @@
 
   /* IE9+ quirks mode check - ticket #1606 */
   if (document.documentMode >= 9 && !document.doctype) {
-    throw("The doctype directive is missing. The recommended doctype in Internet Explorer is the HTML5 doctype: <!DOCTYPE html>");
+    throwError("The doctype directive is missing. The recommended doctype in Internet Explorer is the HTML5 doctype: <!DOCTYPE html>");
   }
 
   var Float32Array = setupTypedArray("Float32Array", "WebGLFloatArray"),
@@ -458,7 +473,7 @@
     } else if (obj.iterator instanceof Function) {
       return obj.iterator();
     } else {
-      throw "Unable to iterate: " + obj;
+      throwError("Unable to iterate: " + obj);
     }
   };
 
@@ -564,13 +579,13 @@
             if (arg0 >= 0 && arg0 <= array.length) {
               array.splice(arg0, 0, arguments[1]); // for add(i, Object)
             } else {
-              throw(arg0 + " is not a valid index");
+              throwError(arg0 + " is not a valid index");
             }
           } else {
-            throw(typeof arg0 + " is not a number");
+            throwError(typeof arg0 + " is not a number");
           }
         } else {
-          throw("Please use the proper number of parameters.");
+          throwError("Please use the proper number of parameters.");
         }
       };
       /**
@@ -591,7 +606,7 @@
         var it;
         if (typeof arg1 === "number") {
           if (arg1 < 0 || arg1 > array.length) {
-            throw("Index out of bounds for addAll: " + arg1 + " greater or equal than " + array.length);
+            throwError("Index out of bounds for addAll: " + arg1 + " greater or equal than " + array.length);
           }
           it = new ObjectIterator(arg2);
           while (it.hasNext()) {
@@ -620,13 +635,13 @@
             if (arg0 >= 0 && arg0 < array.length) {
               array.splice(arg0, 1, arguments[1]);
             } else {
-              throw(arg0 + " is not a valid index.");
+              throwError(arg0 + " is not a valid index.");
             }
           } else {
-            throw(typeof arg0 + " is not a number");
+            throwError(typeof arg0 + " is not a number");
           }
         } else {
-          throw("Please use the proper number of parameters.");
+          throwError("Please use the proper number of parameters.");
         }
       };
 
@@ -1730,7 +1745,7 @@
 
     function createUnsupportedFunc(n) {
       return function() {
-        throw "Processing.js does not support " + n + ".";
+        throwError("Processing.js does not support " + n + ".");
       };
     }
 
@@ -2150,7 +2165,7 @@
   var Processing = this.Processing = function(aCanvas, aCode) {
     // Previously we allowed calling Processing as a func instead of ctor, but no longer.
     if (!(this instanceof Processing)) {
-      throw("called Processing constructor as if it were a function: missing 'new'.");
+      throwError("called Processing constructor as if it were a function: missing 'new'.");
     }
 
     var curElement,
@@ -2164,7 +2179,7 @@
     }
 
     if (!('getContext' in curElement)) {
-      throw("called Processing constructor without passing canvas element reference or id.");
+      throwError("called Processing constructor without passing canvas element reference or id.");
     }
 
     function unimplemented(s) {
@@ -2987,14 +3002,14 @@
       curContext.shaderSource(vertexShaderObject, vetexShaderSource);
       curContext.compileShader(vertexShaderObject);
       if (!curContext.getShaderParameter(vertexShaderObject, curContext.COMPILE_STATUS)) {
-        throw curContext.getShaderInfoLog(vertexShaderObject);
+        throwError(curContext.getShaderInfoLog(vertexShaderObject));
       }
 
       var fragmentShaderObject = curContext.createShader(curContext.FRAGMENT_SHADER);
       curContext.shaderSource(fragmentShaderObject, fragmentShaderSource);
       curContext.compileShader(fragmentShaderObject);
       if (!curContext.getShaderParameter(fragmentShaderObject, curContext.COMPILE_STATUS)) {
-        throw curContext.getShaderInfoLog(fragmentShaderObject);
+        throwError(curContext.getShaderInfoLog(fragmentShaderObject));
       }
 
       var programObject = curContext.createProgram();
@@ -3002,7 +3017,7 @@
       curContext.attachShader(programObject, fragmentShaderObject);
       curContext.linkProgram(programObject);
       if (!curContext.getProgramParameter(programObject, curContext.LINK_STATUS)) {
-        throw "Error linking shaders.";
+        throwError("Error linking shaders.");
       }
 
       return programObject;
@@ -3776,7 +3791,7 @@
         this.fillOpacity         = 1;
 
         if (this.element.getName() !== "svg") {
-          throw("root is not <svg>, it's <" + this.element.getName() + ">");
+          throwError("root is not <svg>, it's <" + this.element.getName() + ">");
         }
       }
       else if (arguments.length === 2) {
@@ -3865,7 +3880,7 @@
           this.height = 1;
 
           //show warning
-          throw("The width and/or height is not " +
+          throwError("The width and/or height is not " +
                 "readable in the <svg> tag of this file.");
         }
       }
@@ -4402,7 +4417,7 @@
         this.parsePathVertex(x2 + ((cx-x2)*2/3), y2 + ((cy-y2)*2/3));
         this.parsePathVertex(x2, y2);
       } else {
-        throw ("Path must start with M/m");
+        throwError ("Path must start with M/m");
       }
     };
     /**
@@ -4418,7 +4433,7 @@
         this.parsePathVertex(x2, y2);
         this.parsePathVertex(x3, y3);
       } else {
-        throw ("Path must start with M/m");
+        throwError ("Path must start with M/m");
       }
     };
     /**
@@ -4435,7 +4450,7 @@
         // or curContext.lineTo
         this.vertices[this.vertices.length-1]["moveTo"] = false;
       } else {
-        throw ("Path must start with M/m");
+        throwError ("Path must start with M/m");
       }
     };
 
@@ -4492,7 +4507,7 @@
             this.vertices.push(verts);
           }
         } else {
-          throw("Error parsing polygon points: odd number of coordinates provided");
+          throwError("Error parsing polygon points: odd number of coordinates provided");
         }
       }
     };
@@ -4509,7 +4524,7 @@
       this.params[2] = this.element.getFloatAttribute("width");
       this.params[3] = this.element.getFloatAttribute("height");
       if (this.params[2] < 0 || this.params[3] < 0) {
-        throw("svg error: negative width or height found while parsing <rect>");
+        throwError("svg error: negative width or height found while parsing <rect>");
       }
     };
     /**
@@ -4530,13 +4545,13 @@
       if (val) {
         rx = ry = this.element.getFloatAttribute("r");
         if (rx < 0) {
-          throw("svg error: negative radius found while parsing <circle>");
+          throwError("svg error: negative radius found while parsing <circle>");
         }
       } else {
         rx = this.element.getFloatAttribute("rx");
         ry = this.element.getFloatAttribute("ry");
         if (rx < 0 || ry < 0) {
-          throw("svg error: negative x-axis radius or y-axis radius found while parsing <ellipse>");
+          throwError("svg error: negative x-axis radius or y-axis radius found while parsing <ellipse>");
         }
       }
       this.params[0] -= rx;
@@ -5076,11 +5091,11 @@
           if (elements) {
             this.parseChildrenRecursive(null, elements);
           } else {
-            throw ("Error loading document");
+            throwError ("Error loading document");
           }
           return this;
         } catch(e) {
-          throw(e);
+          throwError(e);
         }
       },
       /**
@@ -7230,7 +7245,7 @@
         if (dest[j] !== undef) {
           dest[j] = src[i];
         } else {
-          throw "array index out of bounds exception";
+          throwError("array index out of bounds exception");
         }
       }
     };
@@ -8104,7 +8119,7 @@
      * not currently implemented.
      */
     Drawing3D.prototype.transformm = function(pmatrix3d) {
-      throw("p.transform is currently not supported in 3D mode");
+      throwError("p.transform is currently not supported in 3D mode");
     };
 
 
@@ -8257,7 +8272,7 @@
     * @see pushMatrix
     */
     Drawing2D.prototype.rotateZ = function() {
-      throw "rotateZ() is not supported in 2D mode. Use rotate(float) instead.";
+      throwError("rotateZ() is not supported in 2D mode. Use rotate(float) instead.");
     };
 
     Drawing3D.prototype.rotateZ = function(angleInRadians) {
@@ -8474,7 +8489,7 @@
         curTextDescent = oldState.curTextDescent;
         curTextLeading = oldState.curTextLeading;
       } else {
-        throw "Too many popStyle() without enough pushStyle()";
+        throwError("Too many popStyle() without enough pushStyle()");
       }
     };
 
@@ -8720,7 +8735,7 @@
           curSketch.onFrameEnd();
         } catch(e_loop) {
           window.clearInterval(looping);
-          throw e_loop;
+          throwError(e_loop);
         }
       }, curMsPerFrame);
       doLoop = true;
@@ -8835,7 +8850,7 @@
           x = arguments[1];
           y = arguments[2];
           if (x < 0 || y < 0 || y >= image.height || x >= image.width) {
-            throw "x and y must be non-negative and less than the dimensions of the image";
+            throw("x and y must be non-negative and less than the dimensions of the image");
           }
         } else {
           x = image.width >>> 1;
@@ -8988,7 +9003,7 @@
       while (i >= 0) {
         var ch = binaryString[i--];
         if (ch !== '0' && ch !== '1') {
-          throw "the value passed into unbinary was not an 8 bit binary number";
+          throwError("the value passed into unbinary was not an 8 bit binary number");
         }
         if (ch === '1') {
           result += mask;
@@ -9797,7 +9812,7 @@
         }
         return ret;
       }
-      throw "char() may receive only one argument of type int, byte, int[], or byte[].";
+      throwError("char() may receive only one argument of type int, byte, int[], or byte[].");
     };
 
     // Processing doc claims good argument types are: int, char, byte, boolean,
@@ -9886,7 +9901,7 @@
 
     p.__instanceof = function(obj, type) {
       if (typeof type !== "function") {
-        throw "Function is expected as type argument for instanceof operator";
+        throwError("Function is expected as type argument for instanceof operator");
       }
 
       if (typeof obj === "string") {
@@ -10117,7 +10132,7 @@
       }
       var numbers = arguments.length === 1 ? arguments[0] : arguments; // if single argument, array is used
       if (! ("length" in numbers && numbers.length > 0)) {
-        throw "Non-empty array is expected";
+        throwError("Non-empty array is expected");
       }
       var max = numbers[0],
         count = numbers.length;
@@ -10147,7 +10162,7 @@
       }
       var numbers = arguments.length === 1 ? arguments[0] : arguments; // if single argument, array is used
       if (! ("length" in numbers && numbers.length > 0)) {
-        throw "Non-empty array is expected";
+        throwError("Non-empty array is expected");
       }
       var min = numbers[0],
         count = numbers.length;
@@ -10702,7 +10717,7 @@
 
       return function size(aWidth, aHeight, aMode) {
         if (size3DCalled) {
-          throw "Multiple calls to size() for 3D renders are not allowed.";
+          throwError("Multiple calls to size() for 3D renders are not allowed.");
         }
         size3DCalled = true;
 
@@ -10737,7 +10752,7 @@
         }
 
         if (!curContext) {
-          throw "WebGL context is not supported on this browser.";
+          throwError("WebGL context is not supported on this browser.");
         }
 
         // Set defaults
@@ -10878,7 +10893,7 @@
 
     Drawing3D.prototype.ambientLight = function(r, g, b, x, y, z) {
       if (lightCount === PConstants.MAX_LIGHTS) {
-        throw "can only create " + PConstants.MAX_LIGHTS + " lights";
+        throwError("can only create " + PConstants.MAX_LIGHTS + " lights");
       }
 
       var pos = new PVector(x, y, z);
@@ -10933,7 +10948,7 @@
 
     Drawing3D.prototype.directionalLight = function(r, g, b, nx, ny, nz) {
       if (lightCount === PConstants.MAX_LIGHTS) {
-        throw "can only create " + PConstants.MAX_LIGHTS + " lights";
+        throwError("can only create " + PConstants.MAX_LIGHTS + " lights");
       }
 
       curContext.useProgram(programObject3D);
@@ -11084,7 +11099,7 @@
 
     Drawing3D.prototype.pointLight = function(r, g, b, x, y, z) {
       if (lightCount === PConstants.MAX_LIGHTS) {
-        throw "can only create " + PConstants.MAX_LIGHTS + " lights";
+        throwError("can only create " + PConstants.MAX_LIGHTS + " lights");
       }
 
       // Place the point in view space once instead of once per vertex
@@ -11160,7 +11175,7 @@
 
     Drawing3D.prototype.spotLight = function(r, g, b, x, y, z, nx, ny, nz, angle, concentration) {
       if (lightCount === PConstants.MAX_LIGHTS) {
-        throw "can only create " + PConstants.MAX_LIGHTS + " lights";
+        throwError("can only create " + PConstants.MAX_LIGHTS + " lights");
       }
 
       curContext.useProgram(programObject3D);
@@ -11226,12 +11241,12 @@
      * @see scale
      */
     Drawing2D.prototype.beginCamera = function() {
-      throw ("beginCamera() is not available in 2D mode");
+      throwError ("beginCamera() is not available in 2D mode");
     };
 
     Drawing3D.prototype.beginCamera = function() {
       if (manipulatingCamera) {
-        throw ("You cannot call beginCamera() again before calling endCamera()");
+        throwError ("You cannot call beginCamera() again before calling endCamera()");
       }
       manipulatingCamera = true;
       modelView = cameraInv;
@@ -11245,12 +11260,12 @@
      * @see beginCamera
      */
     Drawing2D.prototype.endCamera = function() {
-      throw ("endCamera() is not available in 2D mode");
+      throwError ("endCamera() is not available in 2D mode");
     };
 
     Drawing3D.prototype.endCamera = function() {
       if (!manipulatingCamera) {
-        throw ("You cannot call endCamera() before calling beginCamera()");
+        throwError ("You cannot call endCamera() before calling beginCamera()");
       }
       modelView.set(cam);
       modelViewInv.set(cameraInv);
@@ -11381,7 +11396,7 @@
      * @see perspective
      */
     Drawing2D.prototype.frustum = function() {
-      throw("Processing.js: frustum() is not supported in 2D mode");
+      throwError("Processing.js: frustum() is not supported in 2D mode");
     };
 
     Drawing3D.prototype.frustum = function(left, right, bottom, top, near, far) {
@@ -13443,7 +13458,7 @@
       isBezier = true;
       var vert = [];
       if (firstVert) {
-        throw ("vertex() must be used at least once before calling bezierVertex()");
+        throwError ("vertex() must be used at least once before calling bezierVertex()");
       }
 
       for (var i = 0; i < arguments.length; i++) {
@@ -13457,7 +13472,7 @@
       isBezier = true;
       var vert = [];
       if (firstVert) {
-        throw ("vertex() must be used at least once before calling bezierVertex()");
+        throwError ("vertex() must be used at least once before calling bezierVertex()");
       }
 
       if (arguments.length === 9) {
@@ -13810,7 +13825,7 @@
         imageModeConvert = imageModeCenter;
         break;
       default:
-        throw "Invalid imageMode";
+        throwError("Invalid imageMode");
       }
     };
 
@@ -14060,7 +14075,7 @@
      */
     Drawing2D.prototype.bezier = function() {
       if (arguments.length !== 8) {
-        throw("You must use 8 parameters for bezier() in 2D mode");
+        throwError("You must use 8 parameters for bezier() in 2D mode");
       }
 
       p.beginShape();
@@ -14073,7 +14088,7 @@
 
     Drawing3D.prototype.bezier = function() {
       if (arguments.length !== 12) {
-        throw("You must use 12 parameters for bezier() in 3D mode");
+        throwError("You must use 12 parameters for bezier() in 3D mode");
       }
 
       p.beginShape();
@@ -14315,7 +14330,7 @@
 
     Drawing3D.prototype.rect = function(x, y, width, height, tl, tr, br, bl) {
       if (tl !== undef) {
-        throw "rect() with rounded corners is not supported in 3D mode";
+        throwError("rect() with rounded corners is not supported in 3D mode");
       }
 
       if (curRectMode === PConstants.CORNERS) {
@@ -14545,7 +14560,7 @@
     */
     p.normal = function(nx, ny, nz) {
       if (arguments.length !== 3 || !(typeof nx === "number" && typeof ny === "number" && typeof nz === "number")) {
-        throw "normal() requires three numeric arguments.";
+        throwError("normal() requires three numeric arguments.");
       }
 
       normalX = nx;
@@ -14649,7 +14664,7 @@
         getLength: (function(aImg) {
           return function() {
             if (aImg.isRemote) {
-              throw "Image is loaded remotely. Cannot get length.";
+              throwError("Image is loaded remotely. Cannot get length.");
             } else {
               return aImg.imageData.data.length ? aImg.imageData.data.length/4 : 0;
             }
@@ -14662,7 +14677,7 @@
               data = aImg.imageData.data;
 
             if (aImg.isRemote) {
-              throw "Image is loaded remotely. Cannot get pixels.";
+              throwError("Image is loaded remotely. Cannot get pixels.");
             }
 
             return (data[offset+3] << 24) & PConstants.ALPHA_MASK |
@@ -14678,7 +14693,7 @@
               data = aImg.imageData.data;
 
             if (aImg.isRemote) {
-              throw "Image is loaded remotely. Cannot set pixel.";
+              throwError("Image is loaded remotely. Cannot set pixel.");
             }
 
             data[offset+0] = (c & PConstants.RED_MASK) >>> 16;
@@ -14696,7 +14711,7 @@
               length = aImg.width * aImg.height;
 
             if (aImg.isRemote) {
-              throw "Image is loaded remotely. Cannot get pixels.";
+              throwError("Image is loaded remotely. Cannot get pixels.");
             }
 
             for (var i = 0, offset = 0; i < length; i++, offset += 4) {
@@ -14715,7 +14730,7 @@
               data,
               c;
             if (this.isRemote) {
-              throw "Image is loaded remotely. Cannot set pixels.";
+              throwError("Image is loaded remotely. Cannot set pixels.");
             }
 
             data = aImg.imageData.data;
@@ -15002,7 +15017,7 @@
       */
       resize: function(w, h) {
         if (this.isRemote) { // Remote images cannot access imageData
-          throw "Image is loaded remotely. Cannot resize.";
+          throwError("Image is loaded remotely. Cannot resize.");
         }
         if (this.width !== 0 || this.height !== 0) {
           // make aspect ratio if w or h is 0
@@ -15050,7 +15065,7 @@
               // but only the blue color channel
             }
           } else {
-            throw "mask must have the same dimensions as PImage.";
+            throwError("mask must have the same dimensions as PImage.");
           }
         } else if (mask instanceof Array) {
           if (this.width * this.height === mask.length) {
@@ -15058,7 +15073,7 @@
               obj.data[i * 4 + 3] = mask[i];
             }
           } else {
-            throw "mask array must be the same length as PImage pixels array.";
+            throwError("mask array must be the same length as PImage pixels array.");
           }
         }
 
@@ -15092,7 +15107,7 @@
 
       toDataURL: function() {
         if (this.isRemote) { // Remote images cannot access imageData
-          throw "Image is loaded remotely. Cannot create dataURI.";
+          throwError("Image is loaded remotely. Cannot create dataURI.");
         }
         var canvasData = getCanvasData(this.imageData);
         return canvasData.canvas.toDataURL();
@@ -15253,7 +15268,7 @@
     }
     function get$3(x,y,img) {
       if (img.isRemote) { // Remote images cannot access imageData
-        throw "Image is loaded remotely. Cannot get x,y.";
+        throwError("Image is loaded remotely. Cannot get x,y.");
       }
       // PImage.get(x,y) was called, return the color (int) at x,y of img
       var offset = y * img.width * 4 + (x * 4),
@@ -15271,7 +15286,7 @@
     }
     function get$5(x, y, w, h, img) {
       if (img.isRemote) { // Remote images cannot access imageData
-        throw "Image is loaded remotely. Cannot get x,y,w,h.";
+        throwError("Image is loaded remotely. Cannot get x,y,w,h.");
       }
       // PImage.get(x,y,w,h) was called, return x,y,w,h PImage of img
       // offset start point needs to be *4
@@ -15422,7 +15437,7 @@
     }
     function set$4(x, y, obj, img) {
       if (img.isRemote) { // Remote images cannot access imageData
-        throw "Image is loaded remotely. Cannot set x,y.";
+        throwError("Image is loaded remotely. Cannot set x,y.");
       }
       var c = p.color.toArray(obj);
       var offset = y * img.width * 4 + (x*4);
@@ -15652,10 +15667,10 @@
         obj = arg1;
 
         if (!obj.loaded) {
-          throw "Error using image in background(): PImage not loaded.";
+          throwError("Error using image in background(): PImage not loaded.");
         }
         if(obj.width !== p.width || obj.height !== p.height){
-          throw "Background image must be the same dimensions as the canvas.";
+          throwError("Background image must be the same dimensions as the canvas.");
         }
       } else {
         obj = p.color(arg1, arg2, arg3, arg4);
@@ -15918,7 +15933,7 @@
     */
     p.blend = function(src, sx, sy, sw, sh, dx, dy, dw, dh, mode, pimgdest) {
       if (src.isRemote) {
-        throw "Image is loaded remotely. Cannot blend image.";
+        throwError("Image is loaded remotely. Cannot blend image.");
       }
 
       if (mode === undef) {
@@ -16237,7 +16252,7 @@
         param = null;
       }
       if (img.isRemote) { // Remote images cannot access imageData
-        throw "Image is loaded remotely. Cannot filter image.";
+        throwError("Image is loaded remotely. Cannot filter image.");
       }
       // begin filter process
       var imglen = img.pixels.getLength();
@@ -16272,11 +16287,11 @@
 
         case PConstants.POSTERIZE:
           if (param === null) {
-            throw "Use filter(POSTERIZE, int levels) instead of filter(POSTERIZE)";
+            throwError("Use filter(POSTERIZE, int levels) instead of filter(POSTERIZE)");
           }
           var levels = p.floor(param);
           if ((levels < 2) || (levels > 255)) {
-            throw "Levels must be between 2 and 255 for filter(POSTERIZE, levels)";
+            throwError("Levels must be between 2 and 255 for filter(POSTERIZE, levels)");
           }
           var levels1 = levels - 1;
           for (i = 0; i < imglen; i++) {
@@ -16302,7 +16317,7 @@
             param = 0.5;
           }
           if ((param < 0) || (param > 1)) {
-            throw "Level must be between 0 and 1 for filter(THRESHOLD, level)";
+            throwError("Level must be between 0 and 1 for filter(THRESHOLD, level)");
           }
           var thresh = p.floor(param * 255);
           for (i = 0; i < imglen; i++) {
@@ -16578,7 +16593,7 @@
      */
     p.loadFont = function(name, size) {
       if (name === undef) {
-        throw("font name required in loadFont.");
+        throwError("font name required in loadFont.");
       }
       if (name.indexOf(".svg") === -1) {
         if (size === undef) {
@@ -17966,7 +17981,7 @@
         // Compile the code
         curSketch = Processing.compile(aCode);
 //#else
-//      throw "PJS compile is not supported";
+//      throwError("PJS compile is not supported");
 //#endif
       }
 
@@ -20189,7 +20204,7 @@
         func(processing);
         this.attachFunction = func;
       } else {
-        throw "Unable to attach sketch to the processing instance";
+        throwError("Unable to attach sketch to the processing instance");
       }
     };
 //#if PARSER
@@ -20267,10 +20282,10 @@
             try {
               return new Processing(canvas, code.join("\n"));
             } catch(e) {
-              throw "Processing.js: Unable to execute pjs sketch: " + e;
+              throwError("Processing.js: Unable to execute pjs sketch: " + e);
             }
           } else {
-            throw "Processing.js: Unable to load pjs sketch files: " + errors.join("\n");
+            throwError("Processing.js: Unable to load pjs sketch files: " + errors.join("\n"));
           }
         }
       }
